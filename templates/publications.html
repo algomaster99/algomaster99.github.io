@@ -1,12 +1,24 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-<ul>
-    {% set data = load_data(path="content/publications/publications.bibtex") %}
-    {% set pubs = data.bibliographies %}
-    {%- for pub in pubs %}
-        <li>{{ pub.tags.title }}</li>
-    {% endfor -%}
-</ul>
+
+{% set data = load_data(path="content/publications/publications.bibtex") %}
+{% set pubs = data.bibliographies %}
+{% for pub in pubs %}
+    <div>
+        {% set authors = pub.tags.author | split(pat="and") %}
+        // inline et al
+        {% if authors|length > 1 %}
+            {% set primary_author = authors[0] %}
+        {% else %}
+            {% set primary_author = publication.authors %}
+        {% endif %}
+
+        {{ primary_author }} ({{ pub.tags.date }}). {{ pub.tags.title }}. {{ pub.tags.publisher }}.
+
+        <span>{{ pub.tags.title }}</span>
+    </div>
+{% endfor %}
+
 
 {% endblock main_content %}
