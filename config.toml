@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://algomaster99.github.io/"
 
+# Navbar title
+title = "Aman Sharma"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
