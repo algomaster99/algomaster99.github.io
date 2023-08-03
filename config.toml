@@ -24,3 +24,7 @@ highlight_code = true
 socials = [
     { name = "github", url = "https://github.com/algomaster99", icon = "github" }
 ]
+
+menu = [
+    { name = "Publications", url = "/publications", weight = 1, icon = "publications.png" },
+]

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<ul>
+    {% set data = load_data(path="content/publications/publications.bibtex") %}
+    {% set pubs = data.bibliographies %}
+    {%- for pub in pubs %}
+        <li>{{ pub.tags.title }}</li>
+    {% endfor -%}
+</ul>
+
+{% endblock main_content %}
