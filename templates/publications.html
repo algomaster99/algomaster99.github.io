@@ -2,23 +2,16 @@
 
 {% block main_content %}
 
-{% set data = load_data(path="content/publications/publications.bibtex") %}
-{% set pubs = data.bibliographies %}
-{% for pub in pubs %}
-    <div>
-        {% set authors = pub.tags.author | split(pat="and") %}
-        // inline et al
-        {% if authors|length > 1 %}
-            {% set primary_author = authors[0] %}
-        {% else %}
-            {% set primary_author = publication.authors %}
-        {% endif %}
-
-        {{ primary_author }} ({{ pub.tags.date }}). {{ pub.tags.title }}. {{ pub.tags.publisher }}.
-
-        <span>{{ pub.tags.title }}</span>
-    </div>
-{% endfor %}
+<ul>
+    {% set data = load_data(path="content/publications/publications.bibtex") %}
+    {% set pubs = data.bibliographies %}
+    <h1>2023</h1>
+    {% for pub in pubs %}
+        <li>
+            <a href={{pub.tags.url}}>{{ pub.tags.title }}</a> ({{ pub.tags.author }}), In <i>{{ pub.tags.eprinttype }}</i>, ({{ pub.tags.date }}).
+        </li>
+    {% endfor %}
+</ul>
 
 
 {% endblock main_content %}
