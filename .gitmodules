@@ -1,3 +1,6 @@
 [submodule "themes/shadharon"]
 	path = themes/shadharon
 	url = https://github.com/syedzayyan/shadharon
+[submodule "algomaster99.github.io"]
+	path = algomaster99.github.io
+	url = git@github.com:algomaster99/algomaster99.github.io.git

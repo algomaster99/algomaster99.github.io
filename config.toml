@@ -1,6 +1,11 @@
 # The URL the site will be built for
 base_url = "https://algomaster99.github.io/"
 
+# Output directory is a submodule that contains the build.
+# It does not matter if the URL of the repository is public even though the
+# repository is private.
+output_dir = "algomaster99.github.io"
+
 # Navbar title
 title = "Aman Sharma"
 
@@ -22,7 +27,8 @@ highlight_code = true
 
 # Social links
 socials = [
-    { name = "github", url = "https://github.com/algomaster99", icon = "github" }
+    { name = "github", url = "https://github.com/algomaster99", icon = "github" },
+    { name = "work email", url = "mailto:amansha@kth.se", icon = "email"}
 ]
 
 menu = [
