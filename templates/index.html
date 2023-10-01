@@ -1,0 +1,21 @@
+{% extends "section.html" %}
+
+{% block main_content %}
+
+<div id="banner-container-home">
+    <div id="home-banner-text">
+        <h2>
+            {{ section.extra.desc.title }}
+        </h2>
+        <p id="banner-home-subtitle">{{ section.extra.desc.text }}</p>
+    </div>
+    <div class="image-container-home">
+        <img alt = "the owner" class="banner-home-img" src="{{ section.extra.desc.img }}" />
+    </div>
+</div>
+
+<div>
+    {{ section.content | safe }}
+</div>
+
+{% endblock main_content %}

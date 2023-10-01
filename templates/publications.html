@@ -1,4 +1,4 @@
-{% import "macros/macros.html" as macros %}
+{% import "macros/publication.html" as publication %}
 
 {% extends "base.html" %}
 
@@ -25,7 +25,7 @@
         {% set current_year = year %}
         {% endif %}
 
-        {% set bibtex_path = macros::publication_asset(page=page, ext="bib") -%}
+        {% set bibtex_path = publication::asset(page=page, ext="bib") -%}
         {% set bibdata = "" -%}
         {% if bibtex_path -%}
             {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
@@ -54,7 +54,7 @@
 
                     
                 <span class="bibtex-toggle">[bibtex]</span>
-                <a href="{{ macros::publication_asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
+                <a href="{{ publication::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
                 <a href="{{ page.extra.github }}" target="_blank">[github]</a>
 
                 <!-- It must be the third sibiling of bibtex-toggle as toggle depends upon the position -->
