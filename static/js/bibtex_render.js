@@ -7,6 +7,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     function _toggleVisibility(e) {
         // Toggle the visibility of the bibtex entry
-        e.target.nextElementSibling.nextElementSibling.classList.toggle("hidden");
+        e.target.nextElementSibling.nextElementSibling.nextElementSibling.classList.toggle("hidden");
     }
 });
