@@ -209,9 +209,9 @@
 
 {% macro list_title(pages, tag_name=false) %}
 {% if tag_name %}
-<h1>Entries tagged - "{{ term.name }}"</h1>
+    <h1>Entries tagged - "{{ term.name }}"</h1>
 {% else %}
-<h1 class="page-title">All articles</h1>
+    <h1 class="page-title">All articles</h1>
 {% endif %}
 
 <ul class="posts">
@@ -223,3 +223,9 @@
     {% endfor %}
 </ul>
 {% endmacro list_title %}
+
+{% macro bibpath(page) -%}
+{% for asset in page.assets -%}
+    {% if asset is ending_with("bib") -%}{{asset}}{% break -%}{% endif -%}
+{% endfor -%}
+{% endmacro -%}

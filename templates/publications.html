@@ -1,17 +1,72 @@
+{% import "macros/macros.html" as macros %}
+
 {% extends "base.html" %}
 
 {% block main_content %}
 
-<ul>
-    {% set data = load_data(path="content/publications/publications.bibtex") %}
-    {% set pubs = data.bibliographies %}
-    <h1>2023</h1>
-    {% for pub in pubs %}
-        <li>
-            <a href={{pub.tags.url}}>{{ pub.tags.title }}</a> ({{ pub.tags.author }}), In <i>{{ pub.tags.eprinttype }}</i>, ({{ pub.tags.date }}).
-        </li>
-    {% endfor %}
-</ul>
+<script src="{{ get_url(path='js/bibtex_render.js', trailing_slash=false) | safe }}"/></script>
 
+{% set current_year = "" %}
+
+<div class="container max-w-3xl mx-auto px-4">
+    <div class="font-sans py-8">
+    </div>
+
+    <article class="prose prose-indigo max-w-3xl">
+        {{ section.content | safe }}
+    </article>
+
+
+    {% for page in section.pages -%}
+        {% set year = page.date | date(format="%Y") %}
+
+        {% if year != current_year %}
+        <h1>{{ year }}</h1>
+        {% set current_year = year %}
+        {% endif %}
+
+        {% set bibtex_path = macros::bibpath(page=page) -%}
+        {% set bibdata = "" -%}
+        {% if bibtex_path -%}
+            {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
+            {% set bibdata = bibtex.bibliographies[0] -%}
+            <span>
+                <a href="{{ bibdata.tags.url }}">{{ page.title }}</a>,
+
+                {% set authors_array = bibdata.tags.author | split(pat=" and ") %}
+                {% for author in authors_array %}
+                    {% set first_name = author | split(pat=",") | nth(n=1) %}
+                    {% set family_name = author | split(pat=",") | nth(n=0) %}
+
+                    {% if authors_array | last == author %}
+                        <span>{{ first_name }} {{ family_name }}</span>
+                    {% else %}
+                        <span>{{ first_name }} {{ family_name }},</span>
+                    {% endif %}
+                {% endfor %}
+
+                <i>In</i>
+                {% if bibdata.tags | get(key="publisher")  %}
+                    {{ bibdata.tags.publisher }}
+                {% elif bibdata.tags | get(key="journal") %}
+                    {{ bibdata.tags.journal }}
+                {% endif %}
+
+                    
+                <span>
+                    <span class="bibtex-toggle">[bibtex]</span>
+                    <a href="{{ page.extra.github }}" target="_blank">[github]</a>
+
+                    <!-- It must be the second sibiling of bibtex-toggle as toggle depends upon the position -->
+                    <pre class="bibtex hidden">{{ load_data(path=bibtex_path, format="plain") }}</pre>
+                </span>
+
+
+            </span>
+        {% endif -%}
+
+        {{ page.content | safe }}
+        {% endfor -%}
+</div>
 
 {% endblock main_content %}

@@ -1,4 +1,4 @@
 +++
-description = "List of my publications"
+sort_by = "date"
 template = "publications.html"
 +++
