@@ -1,18 +1,7 @@
 //https://codepen.io/codeorum/pen/bGedRJO
 
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeSwitcher.checked = false;
-    } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        themeSwitcher.checked = true;
-    }
-});
-
-const themeSwitcher = document.querySelector('.theme-switcher input');
-const currentTheme = localStorage.getItem('theme');
+var themeSwitcher = document.querySelector('.theme-switcher input');
+var currentTheme = localStorage.getItem('theme');
 
 // check what is current theme right now and activate it
 if (currentTheme) {
@@ -36,4 +25,3 @@ function switchTheme(e) {
 
 // event listener on checkbox change
 themeSwitcher.addEventListener('change', switchTheme, false);
-

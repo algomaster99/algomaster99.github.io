@@ -63,8 +63,11 @@
             </span>
         {% endif -%}
 
-        {{ page.content | safe }}
-        {% endfor -%}
+        {% if page.extra.comments -%}
+            <blockquote>{{ page.extra.comments }}</blockquote>
+        {% endif %}
+
+    {% endfor -%}
 </div>
 
 {% endblock main_content %}
