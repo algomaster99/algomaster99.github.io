@@ -1,0 +1,12 @@
+.bibtex-toggle {
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration-line: underline;
+  text-decoration-color: var(--links);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
