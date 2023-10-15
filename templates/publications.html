@@ -40,7 +40,7 @@
                 {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
                 {% set bibdata = bibtex.bibliographies[0] -%}
                 <span>
-                    <a href="{{ bibdata.tags.url }}">{{ page.title }}</a>,
+                    <a href="{{ bibdata.tags.url }}">{{ bibdata.tags.title | replace(from="{", to="") | replace(from="}", to="") }}</a>,
 
                     {% set authors_array = bibdata.tags.author | split(pat=" and ") %}
                     {% for author in authors_array %}
@@ -56,9 +56,9 @@
 
                     <i>In</i>
                     {% if bibdata.tags | get(key="publisher")  %}
-                        {{ bibdata.tags.publisher }}
+                        {{ bibdata.tags.publisher | replace(from="\", to="") }}
                     {% elif bibdata.tags | get(key="journal") %}
-                        {{ bibdata.tags.journal }}
+                        {{ bibdata.tags.journal | replace(from="\", to="") }}
                     {% endif %}
 
                         
