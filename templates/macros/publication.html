@@ -3,3 +3,7 @@
     {% if asset is ending_with(ext) -%}{{asset}}{% break -%}{% endif -%}
 {% endfor -%}
 {% endmacro -%}
+
+{% macro sanitize_latex_special_characters(value) -%}
+    {{ value | replace(from="{", to="") | replace(from="}", to="") | replace(from="\", to="") }}
+{% endmacro %}

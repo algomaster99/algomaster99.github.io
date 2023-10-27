@@ -40,7 +40,7 @@
                 {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
                 {% set bibdata = bibtex.bibliographies[0] -%}
                 <span>
-                    <a href="{{ bibdata.tags.url }}">{{ bibdata.tags.title | replace(from="{", to="") | replace(from="}", to="") }}</a>,
+                    <a href="{{ bibdata.tags.url }}">{{ publication::sanitize_latex_special_characters(value=bibdata.tags.title) }}</a>,
 
                     {% set authors_array = bibdata.tags.author | split(pat=" and ") %}
                     {% for author in authors_array %}
@@ -55,12 +55,7 @@
                     {% endfor %}
 
                     <i>In</i>
-                    {% if bibdata.tags | get(key="publisher")  %}
-                        {{ bibdata.tags.publisher | replace(from="\", to="") }}
-                    {% elif bibdata.tags | get(key="journal") %}
-                        {{ bibdata.tags.journal | replace(from="\", to="") }}
-                    {% endif %}
-
+                    {{ publication::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
                         
                     <span class="bibtex-toggle">[bibtex]</span>
                     <a href="{{ publication::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
