@@ -11,7 +11,7 @@ We work on securing software supply [CHAINS](https://chains.proj.kth.se/).
 
 <br/>
 
-## Contact me
+## Contact Me
 
 1. Email: [amansha@kth.se](mailto:amansha@kth.se)
 
