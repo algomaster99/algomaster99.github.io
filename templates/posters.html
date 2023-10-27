@@ -1,0 +1,23 @@
+{% import "macros/publication.html" as publication %}
+
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <center><h1>{{ section.title }}</h1></center>
+
+    <div class="poster-gallery">
+        {% for page in section.pages %}
+
+            <div class="poster-container">
+                <a href="{{ publication::asset(page=page, ext='pdf') }}" target="_blank"> <img src="{{ publication::asset(page=page, ext='jpg') }}" /></a>
+                <div class="poster-caption">{{ page.title }}</div>
+                {% if page.extra.comments %}
+                    <div class="poster-comments">{{ page.extra.comments | safe }}</div>
+                {% endif %}
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% endblock %}
