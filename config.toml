@@ -14,6 +14,8 @@ build_search_index = true
 
 theme = "shadharon"
 
+description = "Researcher who is into software engineering among many other things"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -24,6 +26,8 @@ external_level = "warn"
 
 [extra]
 # Put all your custom variables here
+
+headerImage = "https://avatars.githubusercontent.com/u/35191225?v=4"
 
 # Social links
 socials = [
