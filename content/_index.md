@@ -13,7 +13,7 @@ We work on securing software supply [CHAINS](https://chains.proj.kth.se/).
 
 ## Contact Me
 
-1. Email: [amansha@kth.se](mailto:amansha@kth.se)
+- Email: [amansha@kth.se](mailto:amansha@kth.se)
 
-2. Encrypted channel: [PGP/amansha@kth.se](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xf71a6270dda7bd863b66713781bd3c8a486897b4)
+- Encrypted channel: [PGP/amansha@kth.se](https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xf71a6270dda7bd863b66713781bd3c8a486897b4)
  
