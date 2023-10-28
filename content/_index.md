@@ -9,6 +9,8 @@ I am a PhD student at [KTH Royal Institute of Technology](https://www.kth.se/pro
 I am supervised by two prolific professors, [Martin Monperrus](https://www.monperrus.net/martin/) and [Benoit Baudry](https://softwarediversity.eu/).
 We work on securing software supply [CHAINS](https://chains.proj.kth.se/).
 
+See my PhD activities [here](/phd-activities/).
+
 <br/>
 
 ## Contact Me
