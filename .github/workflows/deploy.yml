@@ -41,5 +41,10 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git checkout publish
         git add docs/
-        git commit -m 'publish: $DEPLOY_COMMIT'
+
+        git commit -m "publish: $DEPLOY_COMMIT" || {
+          echo "Nothing to deploy"
+          exit 0
+        }
+
         git push origin publish
