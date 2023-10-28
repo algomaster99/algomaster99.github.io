@@ -3,48 +3,40 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
-    name: publish
+    name: gh-pages
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-        submodules: true
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodule: true
 
-    - name: Initalize Zola
-      run: |
-        wget https://github.com/barnumbirr/zola-debian/releases/download/v0.17.2-1/zola_0.17.2-1_amd64_bullseye.deb
-        sudo dpkg -i zola_0.17.2-1_amd64_bullseye.deb
-        zola --version
-    
-    - name: Test
-      run: |
-        git checkout main
-        zola check
-    
-    - name: Build
-      id: build
-      run: |
-        zola build
-        DEPLOY_COMMIT=$(git rev-parse main)
-        echo "{DEPLOY_COMMIT}={$DEPLOY_COMMIT}" >> "$GITHUB_OUTPUT"
-    
-    - name: Deploy
-      env:
-        DEPLOY_COMMIT: ${{ steps.build.outputs.DEPLOY_COMMIT }}
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git checkout publish
-        git add docs/
+      - name: Initalize Zola
+        run: |
+          wget https://github.com/barnumbirr/zola-debian/releases/download/v0.17.2-1/zola_0.17.2-1_amd64_bullseye.deb
+          sudo dpkg -i zola_0.17.2-1_amd64_bullseye.deb
+          zola --version
 
-        git commit -m "publish: $DEPLOY_COMMIT" || {
-          echo "Nothing to deploy"
-          exit 0
-        }
+      - name: Test
+        run: zola check
+    
+      - name: Build
+        id: build
+        run: zola build
 
-        git push origin publish
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: success()
+        with:
+          allow_empty_commit: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: publish
+          publish_dir: ./docs
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
