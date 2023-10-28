@@ -34,3 +34,9 @@ template = "simple-markdown.html"
 
 - ### [DH2642 Interaction Programming and the Dynamic Web](https://www.kth.se/student/kurser/kurs/DH2642)
     - Autumn 2023
+
+<br/>
+
+## Courses Studied at KTH
+
+- [EP2810: Short Project in Network Systems](https://cysep.conf.kth.se/)
