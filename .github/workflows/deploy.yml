@@ -37,6 +37,8 @@ jobs:
       env:
         DEPLOY_COMMIT: ${{ steps.build.outputs.DEPLOY_COMMIT }}
       run: |
+        git conifg --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
         git checkout publish
         git add docs/
         git commit -m 'publish: $DEPLOY_COMMIT'
