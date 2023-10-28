@@ -1,0 +1,41 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+name: Build and deploy on push
+jobs:
+  deploy:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Initalize Zola
+      run: |
+        wget https://github.com/barnumbirr/zola-debian/releases/download/v0.17.2-1/zola_0.17.2-1_amd64_bullseye.deb
+        sudo dpgk -i zola_0.17.2-1_amd64_bullseye.deb
+        zola --version
+    
+    - name: Test
+      run: |
+        git checkout main
+        zola check
+    
+    - name: Build
+      id: build
+      run: |
+        zola build
+        DEPLOY_COMMIT=$(git rev-parse main)
+        echo "{DEPLOY_COMMIT}={$DEPLOY_COMMIT}" >> "$GITHUB_OUTPUT"
+    
+    - name: Deploy
+      env:
+        DEPLOY_COMMIT: ${{ steps.build.outputs.DEPLOY_COMMIT }}
+      run: |
+        git checkout publish
+        git add docs/
+        git commit -m 'publish: $DEPLOY_COMMIT'
+        git push origin publish
