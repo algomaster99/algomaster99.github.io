@@ -56,6 +56,7 @@
 
                     <i>In</i>
                     {{ publication::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
+                    {{ bibdata.tags.date }}
                         
                     <span class="bibtex-toggle">[bibtex]</span>
                     <a href="{{ publication::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
