@@ -5,6 +5,10 @@ template = "simple-markdown.html"
 
 <br/>
 
+## Academic Services
+
+- Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
+
 ## Talks
 
 - ### Let a bot deal with your static analysis warnings backlog
