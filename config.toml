@@ -38,8 +38,8 @@ socials = [
 ]
 
 menu = [
-    { name = "Publications", url = "/publications", weight = 1, icon = "publications.png" },
-    { name = "Posters", url = "/posters", weight = 2, icon = "posters.png" },
+    { name = "Publications", url = "/publications", weight = 1 },
+    { name = "Posters", url = "/posters", weight = 2 },
     { name = "Academic Services", url = "/phd-activities", weight = 3 }
 ]
 
