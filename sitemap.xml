@@ -26,4 +26,15 @@
         <loc>https://algomaster99.github.io/publications/sbom-2023/</loc>
         <lastmod>2023-09-27</lastmod>
     </url>
+    <url>
+        <loc>https://algomaster99.github.io/talks/</loc>
+    </url>
+    <url>
+        <loc>https://algomaster99.github.io/talks/eclipsecon/</loc>
+        <lastmod>2022-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://algomaster99.github.io/talks/scipy/</loc>
+        <lastmod>2019-11-30</lastmod>
+    </url>
 </urlset>
