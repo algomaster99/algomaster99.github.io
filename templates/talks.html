@@ -1,0 +1,22 @@
+{% import "macros/publication.html" as publication %}
+
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>{{ section.title }}</h1>
+
+    <div>
+        <ul>
+            {% for page in section.pages %}
+                <li>
+                    <span>{{ page.title }},</span>
+                    <a href="{{ page.extra.conference_url }}">{{ page.extra.conference }}</a>
+                    <a href="{{ page.extra.video }}" target="_blank">[video]</a>
+                    <a href="{{ page.extra.slides }}" target="_blank">[slides]</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
