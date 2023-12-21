@@ -35,6 +35,14 @@
   margin: auto
 }
 
+.me-on-paper > a {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 800px) {
   .poster-gallery {
     flex-direction: column;
