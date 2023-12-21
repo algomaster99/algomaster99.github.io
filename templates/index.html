@@ -7,6 +7,14 @@
         <h2>
             {{ section.extra.desc.title }}
         </h2>
+        <div class="me-on-paper">
+            {% if section.extra.desc.resume %}
+                <a href="{{ get_url(path=section.extra.desc.resume, trailing_slash=false) }}">Résumé</a>
+            {% endif %}
+            {% if section.extra.desc.cv %}
+                <a href="{{ get_url(path=section.extra.desc.cv, trailing_slash=false) }}">Curriculum vitae</a>
+            {% endif %}
+        </div>
     </div>
     <div class="image-container-home">
         <img alt = "the owner" class="banner-home-img" src="{{ section.extra.desc.img }}" />

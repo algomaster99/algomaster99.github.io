@@ -2,7 +2,7 @@
 template = "index.html"
 
 [extra]
-desc = {title = "Hello! I am Aman Sharma", img = "https://avatars.githubusercontent.com/u/35191225?v=4"}
+desc = {title = "Hello! I am Aman Sharma", img = "https://avatars.githubusercontent.com/u/35191225?v=4", resume = "resume.pdf"}
 +++
 
 I am a PhD student at [KTH Royal Institute of Technology](https://www.kth.se/profile/amansha).
