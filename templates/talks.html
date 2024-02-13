@@ -12,7 +12,9 @@
                 <li>
                     <span>{{ page.title }},</span>
                     <a href="{{ page.extra.conference_url }}">{{ page.extra.conference }}</a>
-                    <a href="{{ page.extra.video }}" target="_blank">[video]</a>
+                    {% if page.extra.video -%}
+                        <a href="{{ page.extra.video }}" target="_blank">[video]</a>
+                    {%- endif %}
                     <a href="{{ page.extra.slides }}" target="_blank">[slides]</a>
                 </li>
             {% endfor %}
