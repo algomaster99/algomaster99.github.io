@@ -15,7 +15,7 @@
                     {% if page.extra.video %}
                         <a href="{{ page.extra.video }}" target="_blank">[video]</a>
                     {% endif %}
-                    {% if page.extra.slides is containing("https://") %}
+                    {% if page.extra.slides is starting_with("https://") %}
                         <a href="{{ page.extra.slides }}" target="_blank">[slides]</a>
                     {% elif page.extra.slides is containing(".pdf") %}
                         <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank">[slides]</a>
