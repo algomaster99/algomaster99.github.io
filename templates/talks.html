@@ -1,4 +1,4 @@
-{% import "macros/publication.html" as publication %}
+{% import "macros/common.html" as common %}
 
 {% extends "base.html" %}
 
@@ -12,10 +12,14 @@
                 <li>
                     <span>{{ page.title }},</span>
                     <a href="{{ page.extra.conference_url }}">{{ page.extra.conference }}</a>
-                    {% if page.extra.video -%}
+                    {% if page.extra.video %}
                         <a href="{{ page.extra.video }}" target="_blank">[video]</a>
-                    {%- endif %}
-                    <a href="{{ page.extra.slides }}" target="_blank">[slides]</a>
+                    {% endif %}
+                    {% if page.extra.slides is containing("https://") %}
+                        <a href="{{ page.extra.slides }}" target="_blank">[slides]</a>
+                    {% elif page.extra.slides is containing(".pdf") %}
+                        <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank">[slides]</a>
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>
