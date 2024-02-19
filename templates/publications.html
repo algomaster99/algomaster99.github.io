@@ -1,4 +1,4 @@
-{% import "macros/publication.html" as publication %}
+{% import "macros/common.html" as common %}
 
 {% extends "base.html" %}
 
@@ -34,13 +34,13 @@
         {% endif %}
 
         <li>
-            {% set bibtex_path = publication::asset(page=page, ext="bib") -%}
+            {% set bibtex_path = common::asset(page=page, ext="bib") -%}
             {% set bibdata = "" -%}
             {% if bibtex_path -%}
                 {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
                 {% set bibdata = bibtex.bibliographies[0] -%}
                 <span>
-                    <a href="{{ bibdata.tags.url }}">{{ publication::sanitize_latex_special_characters(value=bibdata.tags.title) }}</a>,
+                    <a href="{{ bibdata.tags.url }}">{{ common::sanitize_latex_special_characters(value=bibdata.tags.title) }}</a>,
 
                     {% set authors_array = bibdata.tags.author | split(pat=" and ") %}
                     {% for author in authors_array %}
@@ -55,11 +55,11 @@
                     {% endfor %}
 
                     <i>In</i>
-                    {{ publication::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
+                    {{ common::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
                     {{ bibdata.tags.date }}
                         
                     <span class="bibtex-toggle">[bibtex]</span>
-                    <a href="{{ publication::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
+                    <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
                     <a href="{{ page.extra.github }}" target="_blank">[github]</a>
 
                     <!-- It must be the third sibiling of bibtex-toggle as toggle depends upon the position -->
