@@ -55,7 +55,7 @@
 }
 
 .updated-footer {
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -74,6 +74,6 @@
   }
 
   .updated-footer {
-    visibility: visible;
+    display: block;
   }
 }
