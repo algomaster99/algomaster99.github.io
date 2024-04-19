@@ -43,6 +43,21 @@
   text-decoration: none;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.updated-main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.updated-footer {
+  visibility: hidden;
+}
+
 @media (max-width: 800px) {
   .poster-gallery {
     flex-direction: column;
@@ -52,5 +67,13 @@
   .poster-container {
     align-items: center;
     margin-bottom: auto;
+  }
+
+  .updated-main {
+    visibility: hidden;
+  }
+
+  .updated-footer {
+    visibility: visible;
   }
 }
