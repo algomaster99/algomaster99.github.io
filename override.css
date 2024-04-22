@@ -46,12 +46,12 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .updated-main {
   display: flex;
   flex-direction: row-reverse;
+  margin-top: auto;
 }
 
 .updated-footer {
