@@ -7,6 +7,9 @@
         <h2>
             {{ section.extra.desc.title }}
         </h2>
+        <div class="quote">
+            <q>{{ section.extra.desc.quote }}</q>
+        </div>
         <div class="me-on-paper">
             {% if section.extra.desc.resume %}
                 <a href="{{ get_url(path=section.extra.desc.resume, trailing_slash=false) }}">Résumé</a>

@@ -6,6 +6,7 @@ template = "index.html"
     title = "Hello! I am Aman Sharma"
     img = "https://avatars.githubusercontent.com/u/35191225?v=4"
     resume = "resume.pdf"
+    quote = "If a 5 year old can understand your research, you are already a world expert!"
 +++
 
 I am a PhD student at [KTH Royal Institute of Technology](https://www.kth.se/profile/amansha).
