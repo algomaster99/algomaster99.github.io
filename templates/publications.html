@@ -55,7 +55,11 @@
                     {% endfor %}
 
                     <i>In</i>
-                    {{ common::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
+                    {% if bibdata.entry_type == "misc" %}
+                        {{ common::sanitize_latex_special_characters(value=bibdata.tags.publisher) }}
+                    {% else %}
+                        {{ common::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
+                    {% endif %}
                     {{ bibdata.tags.date }}
                         
                     <span class="bibtex-toggle">[bibtex]</span>
