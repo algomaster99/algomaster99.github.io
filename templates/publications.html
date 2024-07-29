@@ -62,12 +62,13 @@
                     {% endif %}
                     {{ bibdata.tags.date }}
                         
-                    <span class="bibtex-toggle">[bibtex]</span>
-                    <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank">[pdf]</a>
-                    <a href="{{ page.extra.github }}" target="_blank">[github]</a>
+                    <span id="{{ bibdata.citation_key }}" class="clickable bibtex-toggle">[bibtex]</span>
+                    <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank" class="clickable">[pdf]</a>
+                    {% if page.extra.github %}
+                        <a href="{{ page.extra.github }}" target="_blank" class="clickable">[github]</a>
+                    {% endif %}
 
-                    <!-- It must be the third sibiling of bibtex-toggle as toggle depends upon the position -->
-                    <pre class="bibtex hidden">{{ load_data(path=bibtex_path, format="plain") }}</pre>
+                    <pre id="bibtex-entry-{{ bibdata.citation_key }}" class="clickable hidden">{{ load_data(path=bibtex_path, format="plain") }}</pre>
 
                 </span>
             {% endif -%}
