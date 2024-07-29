@@ -18,6 +18,16 @@
   display: none;
 }
 
+.highlight {
+  background-color: var(--primary-color);
+}
+
+[data-theme="light"] {
+  .highlight {
+    color: white;
+  }
+}
+
 .poster-gallery {
   display: flex;
   flex-direction: row;

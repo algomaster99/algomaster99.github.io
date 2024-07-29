@@ -5,6 +5,7 @@
 {% block main_content %}
 
 <script src="{{ get_url(path='js/bibtex_render.js', trailing_slash=false) | safe }}"/></script>
+<script src="{{ get_url(path='js/highlight_self.js', trailing_slash=false) | safe }}"/></script>
 
 {% set_global current_year = "" %}
 
@@ -48,9 +49,9 @@
                         {% set family_name = author | split(pat=",") | nth(n=0) %}
 
                         {% if authors_array | last == author %}
-                            <span>{{ first_name }} {{ family_name }}</span>
+                            <span class="author">{{ first_name }} {{ family_name }}</span>
                         {% else %}
-                            <span>{{ first_name }} {{ family_name }},</span>
+                            <span class="author">{{ first_name }} {{ family_name }}</span>,
                         {% endif %}
                     {% endfor %}
 
