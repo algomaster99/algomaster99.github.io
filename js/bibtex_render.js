@@ -7,6 +7,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     function _toggleVisibility(e) {
         // Toggle the visibility of the bibtex entry
-        e.target.nextElementSibling.nextElementSibling.nextElementSibling.classList.toggle("hidden");
+        const id = e.target.id;
+        const bibtexEntry = document.getElementById("bibtex-entry-" + id);
+        bibtexEntry.classList.toggle("hidden");
     }
 });
