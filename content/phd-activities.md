@@ -5,6 +5,10 @@ template = "simple-markdown.html"
 
 <br/>
 
+## Master Thesis Supervision
+
+- [*The Embedding and Retrieval of Software Supply Chain Information in Java Applications*](https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-354837), [Daniel Williams](https://github.com/danielwis/), 2024
+
 ## Academic Services
 
 - Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
