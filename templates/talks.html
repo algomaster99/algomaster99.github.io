@@ -20,6 +20,13 @@
                     {% elif page.extra.slides is containing(".pdf") %}
                         <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank">[slides]</a>
                     {% endif %}
+                    {% if page.extra.ppt %}
+                        {% if page.extra.ppt is containing(".pptx") %}
+                            <a href="{{ common::asset(page=page, ext='pptx') }}" target="_blank">[presentation]</a>
+                        {% elif page.extra.ppt is containing(".odp") %}
+                            <a href="{{ common::asset(page=page, ext='odp') }}" target="_blank">[presentation]</a>
+                        {% endif %}
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>
