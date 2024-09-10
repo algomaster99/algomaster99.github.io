@@ -7,6 +7,7 @@ template = "simple-markdown.html"
 
 ## Academic Services
 
+- Co-reviewed manuscript for [ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)](https://scored.dev/)
 - Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
 
 ## Teaching Assistant
