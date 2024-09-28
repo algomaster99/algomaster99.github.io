@@ -94,4 +94,8 @@
   .updated-footer {
     display: block;
   }
+
+  .theme-switcher {
+    margin-top: 20px;
+  }
 }
