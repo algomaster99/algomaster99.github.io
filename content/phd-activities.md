@@ -35,7 +35,3 @@ template = "simple-markdown.html"
     - Autumn 2023
 
 <br/>
-
-## Courses Studied at KTH
-
-- [EP2810: Short Project in Network Systems](https://cysep.conf.kth.se/)
