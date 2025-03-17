@@ -27,8 +27,6 @@ external_level = "warn"
 [extra]
 # Put all your custom variables here
 
-headerImage = "https://avatars.githubusercontent.com/u/35191225?v=4"
-
 # Social links
 socials = [
     { name = "GitHub", url = "https://github.com/algomaster99", icon = "github" },
