@@ -29,9 +29,9 @@
 }
 
 .poster-gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 }
 
 .poster-container {
@@ -78,8 +78,8 @@
 
 @media (max-width: 800px) {
   .poster-gallery {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr; /* One poster per row on smaller screens */
+    gap: 1rem;
   }
 
   .poster-container {
