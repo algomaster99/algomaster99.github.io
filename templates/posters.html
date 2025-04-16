@@ -7,7 +7,7 @@
     <center><h1>{{ section.title }}</h1></center>
 
     <div class="poster-gallery">
-        {% for page in section.pages %}
+        {% for page in section.pages | reverse %}
 
             <div class="poster-container">
                 <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank"> <img src="{{ common::asset(page=page, ext='jpg') }}" /></a>
