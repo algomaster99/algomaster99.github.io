@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://algomaster99.github.io/"
+base_url = "https://algomaster99.netlify.app/"
 
 output_dir = "public"
 
