@@ -1,7 +1,7 @@
 # The URL the site will be built for
-base_url = "https://algomaster99.netlify.app/"
+base_url = "https://algomaster99.github.io/"
 
-output_dir = "public"
+output_dir = "docs"
 
 # Navbar title
 title = "Aman Sharma"
