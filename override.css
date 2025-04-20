@@ -1,0 +1,101 @@
+.quote {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.bibtex-toggle {
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration-line: underline;
+  text-decoration-color: var(--links);
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  background-color: var(--primary-color);
+}
+
+[data-theme="light"] {
+  .highlight {
+    color: white;
+  }
+}
+
+.poster-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.poster-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 15rem;
+}
+
+.poster-caption {
+  font-weight: bold;
+}
+
+.poster-comments {
+  font-style: italic;
+  font-size: 0.6rem;
+  opacity: 0.6;
+  margin: auto
+}
+
+.me-on-paper > a {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.updated-main {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: auto;
+}
+
+.updated-footer {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .poster-gallery {
+    grid-template-columns: 1fr; /* One poster per row on smaller screens */
+    gap: 1rem;
+  }
+
+  .poster-container {
+    align-items: center;
+    margin-bottom: auto;
+  }
+
+  .updated-main {
+    visibility: hidden;
+  }
+
+  .updated-footer {
+    display: block;
+  }
+
+  .theme-switcher {
+    margin-top: 20px;
+  }
+}
