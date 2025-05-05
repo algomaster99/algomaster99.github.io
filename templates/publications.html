@@ -64,7 +64,15 @@
                     {{ bibdata.tags.date }}
                         
                     <span id="{{ bibdata.citation_key }}" class="clickable bibtex-toggle">[bibtex]</span>
-                    <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank" class="clickable">[pdf]</a>
+
+                    {% if page.extra.pdf %}
+                        {% if page.extra.pdf is starting_with("https://") %}
+                            <a href="{{ page.extra.pdf }}" target="_blank" class="clickable">[pdf]</a>
+                        {% else %}
+                            <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank" class="clickable">[pdf]</a>
+                        {% endif %}
+                    {% endif %}
+
                     {% if page.extra.github %}
                         <a href="{{ page.extra.github }}" target="_blank" class="clickable">[github]</a>
                     {% endif %}
