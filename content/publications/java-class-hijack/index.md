@@ -2,5 +2,5 @@
 date = "2024-07-26"
 
 [extra]
-pdf = "2407.18760.pdf"
+pdf = "https://arxiv.org/abs/2407.18760"
 +++
