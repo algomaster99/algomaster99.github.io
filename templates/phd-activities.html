@@ -8,7 +8,7 @@
         <section class="phd-section">
             <h2>Master Thesis Supervision</h2>
             <ul>
-                {% for thesis in theses | sort(attribute="year") | reverse %}
+                {% for thesis in theses %}
                     <li>
                         <a href="{{ thesis.URL }}">{{ thesis.title }}</a>,
                         {{ thesis.author }},
