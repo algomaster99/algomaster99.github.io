@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <h1>{{ page.title }}</h1>
+
+    {% set theses = load_data(path="static/master-thesis.json") %}
+    {% if theses and theses | length > 0 %}
+        <section class="phd-section">
+            <h2>Master Thesis Supervision</h2>
+            <ul>
+                {% for thesis in theses | sort(attribute="year") | reverse %}
+                    <li>
+                        <a href="{{ thesis.URL }}">{{ thesis.title }}</a>,
+                        {{ thesis.author }},
+                        {{ thesis.year }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% endif %}
+
+    {{ page.content | safe }}
+{% endblock %}
+
