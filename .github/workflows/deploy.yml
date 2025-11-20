@@ -31,8 +31,7 @@ jobs:
           GH_BRANCH: ${{ github.ref_name }}
         run: |
           curl -L 'https://kth.diva-portal.org/smash/export.jsf?format=csl_json&addFilename=true&aq=[[{%22freeText%22:%22Aman%20Sharma%22}]]&aqe=[]&aq2=[[{%22publicationTypeCode%22:[%22studentThesis%22]}]]&onlyFullText=false&noOfRows=50&sortOrder=dayCreated_desc&sortOrder2=dayCreated_desc' --globoff | \
-          jq '.[] | {title, URL, year: .issued."date-parts".[].[0], author: [.author.[] | .given + " " + .family] | join(", ") }' > static/master-thesis.json
-          realpath static/master-thesis.json
+          jq 'map({title, URL, year: .issued."date-parts".[].[0], author: [.author.[] | .given + " " + .family] | join(", ") })' > static/master-thesis.json
           if ! git diff --quiet -- static/master-thesis.json; then
             git config --local user.name "github-actions[bot]"
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
