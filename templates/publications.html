@@ -1,5 +1,3 @@
-{% import "macros/common.html" as common %}
-
 {% extends "base.html" %}
 
 {% block main_content %}
@@ -7,87 +5,61 @@
 <script src="{{ get_url(path='js/bibtex_render.js', trailing_slash=false) | safe }}"/></script>
 <script src="{{ get_url(path='js/highlight_self.js', trailing_slash=false) | safe }}"/></script>
 
-{% set_global current_year = "" %}
-
 <div class="container max-w-3xl mx-auto px-4">
     <div class="font-sans py-8">
     </div>
 
-    <article class="prose prose-indigo max-w-3xl">
-        {{ section.content | safe }}
-    </article>
-
-
-    {% for page in section.pages -%}
-        {% set year = page.date | date(format="%Y") %}
-
-        {% if year != current_year %}
-            {% if page == section.pages | first -%}
+    {% set publications_data = load_data(path="static/publications.json", required=false) %}
+    {% if publications_data and publications_data | length > 0 %}
+        {% set_global current_year = 0 %}
+        {% for paper in publications_data %}
+            {% set year = paper.year | default(value=0) %}
+            {% if year != current_year %}
+                {% if not loop.first %}
+                    </ul>
+                {% endif %}
                 <h1>{{ year }}</h1>
                 <ul>
-            {% else %}
-                {# Close the previous list #}
-                </ul>
-                <h1>{{ year }}</h1>
-                <ul>
+                {% set_global current_year = year %}
             {% endif %}
-            {% set_global current_year = year %}
-        {% endif %}
-
-        <li>
-            {% set bibtex_path = common::asset(page=page, ext="bib") -%}
-            {% set bibdata = "" -%}
-            {% if bibtex_path -%}
-                {% set bibtex = load_data(path=bibtex_path, required=false, format="bibtex") -%}
-                {% set bibdata = bibtex.bibliographies[0] -%}
+            
+            <li>
                 <span>
-                    <a href="{{ bibdata.tags.url }}">{{ common::sanitize_latex_special_characters(value=bibdata.tags.title) }}</a>,
-
-                    {% set authors_array = bibdata.tags.author | split(pat=" and ") %}
-                    {% for author in authors_array %}
-                        {% set first_name = author | split(pat=",") | nth(n=1) %}
-                        {% set family_name = author | split(pat=",") | nth(n=0) %}
-
-                        {% if authors_array | last == author %}
-                            <span class="author">{{ first_name }} {{ family_name }}</span>
+                    <strong>
+                        {% if paper.url %}
+                            <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
                         {% else %}
-                            <span class="author">{{ first_name }} {{ family_name }}</span>,
+                            {{ paper.title }}
                         {% endif %}
-                    {% endfor %}
-
+                    </strong>,
+                    <span class="authors">{{ paper.authors }}</span>,
                     <i>In</i>
-                    {% if bibdata.entry_type == "misc" %}
-                        {{ common::sanitize_latex_special_characters(value=bibdata.tags.publisher) }}
-                    {% else %}
-                        {{ common::sanitize_latex_special_characters(value=bibdata.tags.journaltitle) }}
+                    {% if paper.journal %}
+                        {{ paper.journal }}
+                    {% elif paper.venue %}
+                        {{ paper.venue }}
                     {% endif %}
-                    {{ bibdata.tags.date }}
-                        
-                    <span id="{{ bibdata.citation_key }}" class="clickable bibtex-toggle">[bibtex]</span>
-
-                    {% if page.extra.pdf %}
-                        {% if page.extra.pdf is starting_with("https://") %}
-                            <a href="{{ page.extra.pdf }}" target="_blank" class="clickable">[pdf]</a>
-                        {% else %}
-                            <a href="{{ common::asset(page=page, ext='pdf') }}" target="_blank" class="clickable">[pdf]</a>
-                        {% endif %}
+                    {% if paper.year %}
+                        {{ paper.year }}
                     {% endif %}
-
-                    {% if page.extra.github %}
-                        <a href="{{ page.extra.github }}" target="_blank" class="clickable">[github]</a>
+                    
+                    {% if paper.doi %}
+                        <a href="https://doi.org/{{ paper.doi }}" target="_blank" class="clickable">[doi]</a>
                     {% endif %}
-
-                    <pre id="bibtex-entry-{{ bibdata.citation_key }}" class="clickable hidden">{{ load_data(path=bibtex_path, format="plain") }}</pre>
-
+                    {% if paper.arxivId %}
+                        <a href="https://arxiv.org/abs/{{ paper.arxivId }}" target="_blank" class="clickable">[arxiv]</a>
+                    {% endif %}
+                    {% if paper.bibtex %}
+                        <span id="{{ paper.paperId }}" class="clickable bibtex-toggle">[bibtex]</span>
+                        <pre id="bibtex-entry-{{ paper.paperId }}" class="clickable hidden">{{ paper.bibtex }}</pre>
+                    {% endif %}
                 </span>
-            {% endif -%}
-
-            {% if page.extra.comments -%}
-                <blockquote>{{ page.extra.comments }}</blockquote>
-            {% endif %}
-        </li>
-
-    {% endfor -%}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No publications found.</p>
+    {% endif %}
 </div>
 
 {% endblock main_content %}

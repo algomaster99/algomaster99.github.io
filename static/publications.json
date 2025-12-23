@@ -1,0 +1,148 @@
+[
+  {
+    "title": "Classport: Designing Runtime Dependency Introspection for Java",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
+    "authors": "Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus",
+    "abstract": "Runtime introspection of dependencies, i.e., the ability to observe which dependencies are currently used during program execution, is fundamental for Software Supply Chain security. Yet, Java has no support for it. We solve this problem with Classport, a system that embeds dependency information into Java class files, enabling the retrieval of dependency information at runtime. We evaluate Classport on six real-world projects, demonstrating the feasibility in identifying dependencies at runtime. Runtime dependency introspection with Classport opens important avenues for runtime integrity checking.",
+    "url": "https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2",
+    "paperId": "d3c731c6fd32a2162a7431973a65e1fbcf0b6be2",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.48550/arXiv.2510.20340",
+    "arxivId": "2510.20340",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{d3c731c6fd32a2162a7431973a65e1fbcf0b6be2,\n  title = {Classport: Designing Runtime Dependency Introspection for Java},\n  author = {Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"abs/2510.20340\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2510.20340},\n  eprint = {2510.20340},\n  url = {https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2},\n  abstract = {Runtime introspection of dependencies, i.e., the ability to observe which dependencies are currently used during program execution, is fundamental for Software Supply Chain security. Yet, Java has no support for it. We solve this problem with Classport, a system that embeds dependency information into Java class files, enabling the retrieval of dependency information at runtime. We evaluate Classport on six real-world projects, demonstrating the feasibility in identifying dependencies at runtime. Runtime dependency introspection with Classport opens important avenues for runtime integrity checking.},\n}"
+  },
+  {
+    "title": "Causes and Canonicalization of Unreproducible Builds in Java",
+    "year": 2025,
+    "venue": "IEEE Transactions on Software Engineering",
+    "journal": "IEEE Transactions on Software Engineering",
+    "authors": "Aman Sharma and Benoit Baudry and Martin Monperrus",
+    "abstract": "The increasing complexity of software supply chains and the rise of supply chain attacks have elevated concerns around software integrity. Users and stakeholders face significant challenges in validating that a given software artifact corresponds to its declared source. Reproducible Builds address this challenge by ensuring that independently performed builds from identical source code produce identical binaries. However, achieving reproducibility at scale remains difficult, especially in Java, due to a range of non-deterministic factors and caveats in the build process. In this work, we focus on reproducibility in Java-based software, archetypal of enterprise applications. We introduce a conceptual framework for reproducible builds, we analyze a large dataset from Reproducible Central, and we develop a novel taxonomy of six root causes of unreproducibility. We study actionable mitigations: artifact and bytecode canonicalization using OSS-Rebuild and jNorm respectively. Finally, we present Chains-Rebuild, a tool that achieve successfulcanonicalization for 26.60% on 12,803 unreproducible artifacts To sum up, our contributions are the first large-scale taxonomy of build unreproducibility causes in Java, a publicly available dataset of unreproducible builds, and Chains-Rebuild, a canonicalization tool for mitigating unreproducible builds in Java.",
+    "url": "https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6",
+    "paperId": "0335eec7ae3e01976ff66485fac24a72291bbfe6",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/tse.2025.3627891",
+    "arxivId": "2504.21679",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and Benoit Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/tse.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n  abstract = {The increasing complexity of software supply chains and the rise of supply chain attacks have elevated concerns around software integrity. Users and stakeholders face significant challenges in validating that a given software artifact corresponds to its declared source. Reproducible Builds address this challenge by ensuring that independently performed builds from identical source code produce identical binaries. However, achieving reproducibility at scale remains difficult, especially in Java, due to a range of non-deterministic factors and caveats in the build process. In this work, we focus on reproducibility in Java-based software, archetypal of enterprise applications. We introduce a conceptual framework for reproducible builds, we analyze a large dataset from Reproducible Central, and we develop a novel taxonomy of six root causes of unreproducibility. We study actionable mitigations: artifact and bytecode canonicalization using OSS-Rebuild and jNorm respectively. Finally, we present Chains-Rebuild, a tool that achieve successfulcanonicalization for 26.60% on 12,803 unreproducible artifacts To sum up, our contributions are the first large-scale taxonomy of build unreproducibility causes in Java, a publicly available dataset of unreproducible builds, and Chains-Rebuild, a canonicalization tool for mitigating unreproducible builds in Java.},\n}"
+  },
+  {
+    "title": "SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
+    "authors": "Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin",
+    "abstract": "Software supply chain attacks have become a significant threat as software development increasingly relies on contributions from multiple, often unverified sources. The code from unverified sources does not pose a threat until it is executed. Log4Shell is a recent example of a supply chain attack that processed a malicious input at runtime, leading to remote code execution. It exploited the dynamic class loading facilities of Java to compromise the runtime integrity of the application. Traditional safeguards can mitigate supply chain attacks at build time, but they have limitations in mitigating runtime threats posed by dynamically loaded malicious classes. This calls for a system that can detect these malicious classes and prevent their execution at runtime. This paper introduces SBOM.EXE, a proactive system designed to safeguard Java applications against such threats. SBOM.EXE constructs a comprehensive allowlist of permissible classes based on the complete software supply chain of the application. This allowlist is enforced at runtime, blocking any unrecognized or tampered classes from executing. We assess SBOM.EXE's effectiveness by mitigating 3 critical CVEs based on the above threat. We run our tool with 3 open-source Java applications and report that our tool is compatible with real-world applications with minimal performance overhead. Our findings demonstrate that SBOM.EXE can effectively maintain runtime integrity with minimal performance impact, offering a novel approach to fortifying Java applications against dynamic classloading attacks.",
+    "url": "https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8",
+    "paperId": "fee03410d3382e45099694dd4526be3184c0edd8",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.48550/arXiv.2407.00246",
+    "arxivId": "2407.00246",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{fee03410d3382e45099694dd4526be3184c0edd8,\n  title = {SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java},\n  author = {Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"volume\":\"abs/2407.00246\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2407.00246},\n  eprint = {2407.00246},\n  url = {https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8},\n  abstract = {Software supply chain attacks have become a significant threat as software development increasingly relies on contributions from multiple, often unverified sources. The code from unverified sources does not pose a threat until it is executed. Log4Shell is a recent example of a supply chain attack that processed a malicious input at runtime, leading to remote code execution. It exploited the dynamic class loading facilities of Java to compromise the runtime integrity of the application. Traditional safeguards can mitigate supply chain attacks at build time, but they have limitations in mitigating runtime threats posed by dynamically loaded malicious classes. This calls for a system that can detect these malicious classes and prevent their execution at runtime. This paper introduces SBOM.EXE, a proactive system designed to safeguard Java applications against such threats. SBOM.EXE constructs a comprehensive allowlist of permissible classes based on the complete software supply chain of the application. This allowlist is enforced at runtime, blocking any unrecognized or tampered classes from executing. We assess SBOM.EXE's effectiveness by mitigating 3 critical CVEs based on the above threat. We run our tool with 3 open-source Java applications and report that our tool is compatible with real-world applications with minimal performance overhead. Our findings demonstrate that SBOM.EXE can effectively maintain runtime integrity with minimal performance impact, offering a novel approach to fortifying Java applications against dynamic classloading attacks.},\n}"
+  },
+  {
+    "title": "Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order",
+    "year": 2024,
+    "venue": "",
+    "journal": null,
+    "authors": "Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin",
+    "abstract": "Java projects frequently rely on package managers such as Maven to manage complex webs of external dependencies. While these tools streamline development, they also introduce subtle risks to the software supply chain. In this paper, we present Maven-Hijack, a novel attack that exploits the order in which Maven packages dependencies and the way the Java Virtual Machine resolves classes at runtime. By injecting a malicious class with the same fully qualified name as a legitimate one into a dependency that is packaged earlier, an attacker can silently override core application behavior without modifying the main codebase or library names. We demonstrate the real-world feasibility of this attack by compromising the Corona-Warn-App, a widely used open-source COVID-19 contact tracing system, and gaining control over its database connection logic. We evaluate three mitigation strategies, such as sealed JARs, Java Modules, and the Maven Enforcer plugin. Our results show that, while Java Modules offer strong protection, the Maven Enforcer plugin with duplicate class detection provides the most practical and effective defense for current Java projects. These findings highlight the urgent need for improved safeguards in Java's build and dependency management processes to prevent stealthy supply chain attacks.",
+    "url": "https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
+    "paperId": "88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2407.18760",
+    "publicationTypes": null,
+    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  booktitle = {},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n  abstract = {Java projects frequently rely on package managers such as Maven to manage complex webs of external dependencies. While these tools streamline development, they also introduce subtle risks to the software supply chain. In this paper, we present Maven-Hijack, a novel attack that exploits the order in which Maven packages dependencies and the way the Java Virtual Machine resolves classes at runtime. By injecting a malicious class with the same fully qualified name as a legitimate one into a dependency that is packaged earlier, an attacker can silently override core application behavior without modifying the main codebase or library names. We demonstrate the real-world feasibility of this attack by compromising the Corona-Warn-App, a widely used open-source COVID-19 contact tracing system, and gaining control over its database connection logic. We evaluate three mitigation strategies, such as sealed JARs, Java Modules, and the Maven Enforcer plugin. Our results show that, while Java Modules offer strong protection, the Maven Enforcer plugin with duplicate class detection provides the most practical and effective defense for current Java projects. These findings highlight the urgent need for improved safeguards in Java's build and dependency management processes to prevent stealthy supply chain attacks.},\n}"
+  },
+  {
+    "title": "Software Bill of Materials in Java",
+    "year": 2023,
+    "venue": "SCORED@CCS",
+    "journal": "Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses",
+    "authors": "Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "abstract": "Modern software applications are virtually never built entirely in-house. As a matter of fact, they reuse many third-party dependencies, which form the core of their software supply chain [1]. The large number of dependencies in an application has turned into a major challenge for both security and reliability. For example, to compromise a high-value application, malicious actors can choose to attack a less well-guarded dependency of the project [2]. Even when there is no malicious intent, bugs can propagate through the software supply chain and cause breakages in applications. Gathering accurate, upto- date information about all dependencies included in an application is, therefore, of vital importance.",
+    "url": "https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce",
+    "paperId": "5bbeaef5be5f51910284aedab35351c651aeafce",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1145/3605770.3625207",
+    "arxivId": null,
+    "publicationTypes": [
+      "JournalArticle",
+      "Book"
+    ],
+    "bibtex": "@article{5bbeaef5be5f51910284aedab35351c651aeafce,\n  title = {Software Bill of Materials in Java},\n  author = {Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"name\":\"Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {SCORED@CCS},\n  doi = {10.1145/3605770.3625207},\n  url = {https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce},\n  abstract = {Modern software applications are virtually never built entirely in-house. As a matter of fact, they reuse many third-party dependencies, which form the core of their software supply chain [1]. The large number of dependencies in an application has turned into a major challenge for both security and reliability. For example, to compromise a high-value application, malicious actors can choose to attack a less well-guarded dependency of the project [2]. Even when there is no malicious intent, bugs can propagate through the software supply chain and cause breakages in applications. Gathering accurate, upto- date information about all dependencies included in an application is, therefore, of vital importance.},\n}"
+  },
+  {
+    "title": "Challenges of Producing Software Bill of Materials for Java",
+    "year": 2023,
+    "venue": "IEEE Security and Privacy",
+    "journal": "IEEE Security & Privacy",
+    "authors": "Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "abstract": "Software bills of materials (SBOMs) promise to become the backbone of software supply chain hardening. We deep-dive into six tools and the SBOMs they produce for complex open source Java projects, revealing challenges regarding the accurate production and usage of SBOMs.",
+    "url": "https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
+    "paperId": "363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/MSEC.2023.3302956",
+    "arxivId": "2303.11102",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{363c457a4835dfbf0c2eb1ae95b0c7c6c4219722,\n  title = {Challenges of Producing Software Bill of Materials for Java},\n  author = {Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"volume\":\"21\",\"pages\":\"12-23\",\"name\":\"IEEE Security & Privacy\"}},\n  booktitle = {IEEE Security and Privacy},\n  doi = {10.1109/MSEC.2023.3302956},\n  eprint = {2303.11102},\n  url = {https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722},\n  abstract = {Software bills of materials (SBOMs) promise to become the backbone of software supply chain hardening. We deep-dive into six tools and the SBOMs they produce for complex open source Java projects, revealing challenges regarding the accurate production and usage of SBOMs.},\n}"
+  },
+  {
+    "title": "Augmenting Diffs With Runtime Information",
+    "year": 2022,
+    "venue": "IEEE Transactions on Software Engineering",
+    "journal": "IEEE Transactions on Software Engineering",
+    "authors": "K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin",
+    "abstract": "Source code diffs are used on a daily basis as part of code review, inspection, and auditing. To facilitate understanding, they are typically accompanied by explanations that describe the essence of what is changed in the program. As manually crafting high-quality explanations is a cumbersome task, researchers have proposed automatic techniques to generate code diff explanations. Existing explanation generation methods solely focus on static analysis, i.e., they do not take advantage of runtime information to explain code changes. In this article, we propose Collector-Sahab, a novel tool that augments code diffs with runtime difference information. Collector-Sahab compares the program states of the original (old) and patched (new) versions of a program to find unique variable values. Then, Collector-Sahab adds this novel runtime information to the source code diff as shown, for instance, in code reviewing systems. As an evaluation, we run Collector-Sahab on 584 code diffs for Defects4J bugs and find it successfully augments the code diff for 95% (555/584) of them. We also perform a user study and ask eight participants to score the augmented code diffs generated by Collector-Sahab. Per this user study, we conclude that developers find the idea of adding runtime data to code diffs promising and useful. Overall, our experiments show the effectiveness and usefulness of Collector-Sahab in augmenting code diffs with runtime difference information. Publicly-available repository: https://github.com/ASSERT-KTH/collector-sahab.",
+    "url": "https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8",
+    "paperId": "1f593c52814f94ca884c844c5186459906a4c3c8",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/TSE.2023.3324258",
+    "arxivId": "2212.11077",
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "bibtex": "@article{1f593c52814f94ca884c844c5186459906a4c3c8,\n  title = {Augmenting Diffs With Runtime Information},\n  author = {K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin},\n  year = {2022},\n  journal = {{\"volume\":\"49\",\"pages\":\"4988-5007\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2023.3324258},\n  eprint = {2212.11077},\n  url = {https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8},\n  abstract = {Source code diffs are used on a daily basis as part of code review, inspection, and auditing. To facilitate understanding, they are typically accompanied by explanations that describe the essence of what is changed in the program. As manually crafting high-quality explanations is a cumbersome task, researchers have proposed automatic techniques to generate code diff explanations. Existing explanation generation methods solely focus on static analysis, i.e., they do not take advantage of runtime information to explain code changes. In this article, we propose Collector-Sahab, a novel tool that augments code diffs with runtime difference information. Collector-Sahab compares the program states of the original (old) and patched (new) versions of a program to find unique variable values. Then, Collector-Sahab adds this novel runtime information to the source code diff as shown, for instance, in code reviewing systems. As an evaluation, we run Collector-Sahab on 584 code diffs for Defects4J bugs and find it successfully augments the code diff for 95% (555/584) of them. We also perform a user study and ask eight participants to score the augmented code diffs generated by Collector-Sahab. Per this user study, we conclude that developers find the idea of adding runtime data to code diffs promising and useful. Overall, our experiments show the effectiveness and usefulness of Collector-Sahab in augmenting code diffs with runtime difference information. Publicly-available repository: https://github.com/ASSERT-KTH/collector-sahab.},\n}"
+  },
+  {
+    "title": "QADroid: regression event selection for Android applications",
+    "year": 2019,
+    "venue": "International Symposium on Software Testing and Analysis",
+    "journal": "Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis",
+    "authors": "Aman Sharma and R. Nasre",
+    "abstract": "Popular Android applications undergo frequent releases. Ensuring functional testing of the new features, as well as regression testing of the previous functionality, are time-consuming and error-prone. Thus, there is a need for a tool that eases the testing efforts as well as saves the overall time of the product release cycle. In this work, we present QADroid, the first activity- and event-aware regression selection tool for Android apps. Salient features of QADroid are: (i) a richer change-set analyzer that covers code as well as non-code components for regression, (ii) it presents a pictorial representation of the app’s functioning, and (iii) it displays the regression points in the app as a mapping between activities to user-elements to events. Features (ii) and (iii) help the testers in understanding the technical findings better. We evaluated QADroid on 1105 releases of 50 open source Android projects. The results show that QADroid reduced the activity selection by 58% and event selection by 74% compared to the traditional way of exhaustive testing of all activities and events, thereby significantly reducing the manual testing efforts.",
+    "url": "https://www.semanticscholar.org/paper/5f78eb9b389a591bc415cc43bd8202fec11ac30a",
+    "paperId": "5f78eb9b389a591bc415cc43bd8202fec11ac30a",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1145/3293882.3330550",
+    "arxivId": null,
+    "publicationTypes": [
+      "Book",
+      "JournalArticle",
+      "Conference"
+    ],
+    "bibtex": "@article{5f78eb9b389a591bc415cc43bd8202fec11ac30a,\n  title = {QADroid: regression event selection for Android applications},\n  author = {Aman Sharma and R. Nasre},\n  year = {2019},\n  journal = {{\"name\":\"Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis\"}},\n  booktitle = {International Symposium on Software Testing and Analysis},\n  doi = {10.1145/3293882.3330550},\n  url = {https://www.semanticscholar.org/paper/5f78eb9b389a591bc415cc43bd8202fec11ac30a},\n  abstract = {Popular Android applications undergo frequent releases. Ensuring functional testing of the new features, as well as regression testing of the previous functionality, are time-consuming and error-prone. Thus, there is a need for a tool that eases the testing efforts as well as saves the overall time of the product release cycle. In this work, we present QADroid, the first activity- and event-aware regression selection tool for Android apps. Salient features of QADroid are: (i) a richer change-set analyzer that covers code as well as non-code components for regression, (ii) it presents a pictorial representation of the app’s functioning, and (iii) it displays the regression points in the app as a mapping between activities to user-elements to events. Features (ii) and (iii) help the testers in understanding the technical findings better. We evaluated QADroid on 1105 releases of 50 open source Android projects. The results show that QADroid reduced the activity selection by 58% and event selection by 74% compared to the traditional way of exhaustive testing of all activities and events, thereby significantly reducing the manual testing efforts.},\n}"
+  }
+]

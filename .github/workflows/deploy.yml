@@ -43,6 +43,50 @@ jobs:
             echo "No changes to master thesis data; skipping commit."
           fi
     
+      - name: Update publications from Semantic Scholar
+        env:
+          GH_BRANCH: ${{ github.ref_name }}
+        run: |
+          # Fetch author data with papers from Semantic Scholar API
+          curl -L 'https://api.semanticscholar.org/graph/v1/author/2109648871?fields=name,papers.title,papers.year,papers.venue,papers.authors,papers.abstract,papers.url,papers.externalIds,papers.paperId,papers.publicationTypes,papers.journal' | \
+          jq '[.papers[]? | {
+            title: .title,
+            year: .year,
+            venue: .venue,
+            journal: (if .journal then .journal.name else null end),
+            authors: ([.authors[]? | .name] | join(" and ")),
+            abstract: .abstract,
+            url: .url,
+            paperId: .paperId,
+            citationCount: .citationCount,
+            referenceCount: .referenceCount,
+            doi: (if .externalIds then .externalIds.DOI else null end),
+            arxivId: (if .externalIds then .externalIds.ArXiv else null end),
+            publicationTypes: .publicationTypes,
+            bibtex: (
+              "@article{" + (.paperId | tostring) + ",\n" +
+              "  title = {" + (.title // "" | tostring) + "},\n" +
+              "  author = {" + ([.authors[]? | .name] | join(" and ") // "") + "},\n" +
+              "  year = {" + (.year | tostring // "") + "},\n" +
+              (if .journal then "  journal = {" + (.journal | tostring) + "},\n" else "" end) +
+              (if .venue then "  booktitle = {" + (.venue | tostring) + "},\n" else "" end) +
+              (if .externalIds and .externalIds.DOI then "  doi = {" + (.externalIds.DOI | tostring) + "},\n" else "" end) +
+              (if .externalIds and .externalIds.ArXiv then "  eprint = {" + (.externalIds.ArXiv | tostring) + "},\n" else "" end) +
+              (if .url then "  url = {" + (.url | tostring) + "},\n" else "" end) +
+              (if .abstract then "  abstract = {" + (.abstract | tostring) + "},\n" else "" end) +
+              "}"
+            )
+          }] | sort_by(.year // 0) | reverse' > static/publications.json
+          if ! git diff --quiet -- static/publications.json; then
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git add static/publications.json
+            git commit -m "Update publications from Semantic Scholar"
+            git push origin "HEAD:${GH_BRANCH}"
+          else
+            echo "No changes to publications data; skipping commit."
+          fi
+    
       - name: Build
         id: build
         run: zola build
