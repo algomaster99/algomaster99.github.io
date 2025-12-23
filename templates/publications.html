@@ -32,7 +32,20 @@
                             {{ paper.title }}
                         {% endif %}
                     </strong>,
-                    <span class="authors">{{ paper.authors }}</span>,
+                    <span class="authors">
+                        {% set author_list = paper.authors | split(pat=" and ") %}
+                        {% set author_count = author_list | length %}
+                        {% for author in author_list %}
+                            {% set trimmed_author = author | trim %}
+                            {% if loop.last and author_count > 1 %}
+                                and <span class="author">{{ trimmed_author }}</span>
+                            {% elif author_count > 1 %}
+                                <span class="author">{{ trimmed_author }}</span>,
+                            {% else %}
+                                <span class="author">{{ trimmed_author }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    </span>,
                     <i>In</i>
                     {% if paper.journal %}
                         {{ paper.journal }}
