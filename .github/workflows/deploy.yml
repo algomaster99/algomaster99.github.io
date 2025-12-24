@@ -48,14 +48,13 @@ jobs:
           GH_BRANCH: ${{ github.ref_name }}
         run: |
           # Fetch author data with papers from Semantic Scholar API
-          curl -L 'https://api.semanticscholar.org/graph/v1/author/2109648871?fields=name,papers.title,papers.year,papers.venue,papers.authors,papers.abstract,papers.url,papers.externalIds,papers.paperId,papers.publicationTypes,papers.journal' | \
+          curl -L 'https://api.semanticscholar.org/graph/v1/author/2109648871?fields=name,papers.title,papers.year,papers.venue,papers.authors,papers.url,papers.externalIds,papers.paperId,papers.publicationTypes,papers.journal' | \
           jq '[.papers[]? | {
             title: .title,
             year: .year,
             venue: .venue,
             journal: (if .journal then .journal.name else null end),
             authors: ([.authors[]? | .name] | join(" and ")),
-            abstract: .abstract,
             url: .url,
             paperId: .paperId,
             citationCount: .citationCount,
@@ -73,7 +72,6 @@ jobs:
               (if .externalIds and .externalIds.DOI then "  doi = {" + (.externalIds.DOI | tostring) + "},\n" else "" end) +
               (if .externalIds and .externalIds.ArXiv then "  eprint = {" + (.externalIds.ArXiv | tostring) + "},\n" else "" end) +
               (if .url then "  url = {" + (.url | tostring) + "},\n" else "" end) +
-              (if .abstract then "  abstract = {" + (.abstract | tostring) + "},\n" else "" end) +
               "}"
             )
           }] | sort_by(.year // 0) | reverse' > static/publications.json
