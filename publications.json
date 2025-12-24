@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Classport: Designing Runtime Dependency Introspection for Java",
+    "year": 2025,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
+    "authors": "Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus",
+    "url": "https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2",
+    "paperId": "d3c731c6fd32a2162a7431973a65e1fbcf0b6be2",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.48550/arXiv.2510.20340",
+    "arxivId": "2510.20340",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{d3c731c6fd32a2162a7431973a65e1fbcf0b6be2,\n  title = {Classport: Designing Runtime Dependency Introspection for Java},\n  author = {Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"abs/2510.20340\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2510.20340},\n  eprint = {2510.20340},\n  url = {https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2},\n}"
+  },
+  {
+    "title": "Build and Runtime Integrity for Java",
+    "year": 2025,
+    "venue": "2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+    "journal": "2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)",
+    "authors": "Aman Sharma",
+    "url": "https://www.semanticscholar.org/paper/7f6768a5b78b29503942b4b6a5a7d2b481697e23",
+    "paperId": "7f6768a5b78b29503942b4b6a5a7d2b481697e23",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/ICSE-Companion66252.2025.00042",
+    "arxivId": null,
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "bibtex": "@article{7f6768a5b78b29503942b4b6a5a7d2b481697e23,\n  title = {Build and Runtime Integrity for Java},\n  author = {Aman Sharma},\n  year = {2025},\n  journal = {{\"pages\":\"145-147\",\"name\":\"2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)\"}},\n  booktitle = {2025 IEEE/ACM 47th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)},\n  doi = {10.1109/ICSE-Companion66252.2025.00042},\n  url = {https://www.semanticscholar.org/paper/7f6768a5b78b29503942b4b6a5a7d2b481697e23},\n}"
+  },
+  {
+    "title": "Causes and Canonicalization of Unreproducible Builds in Java",
+    "year": 2025,
+    "venue": "IEEE Transactions on Software Engineering",
+    "journal": "IEEE Transactions on Software Engineering",
+    "authors": "Aman Sharma and Benoit Baudry and Martin Monperrus",
+    "url": "https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6",
+    "paperId": "0335eec7ae3e01976ff66485fac24a72291bbfe6",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/tse.2025.3627891",
+    "arxivId": "2504.21679",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and Benoit Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/tse.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n}"
+  },
+  {
+    "title": "SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java",
+    "year": 2024,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
+    "authors": "Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin",
+    "url": "https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8",
+    "paperId": "fee03410d3382e45099694dd4526be3184c0edd8",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.48550/arXiv.2407.00246",
+    "arxivId": "2407.00246",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{fee03410d3382e45099694dd4526be3184c0edd8,\n  title = {SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java},\n  author = {Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"volume\":\"abs/2407.00246\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2407.00246},\n  eprint = {2407.00246},\n  url = {https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8},\n}"
+  },
+  {
+    "title": "Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order",
+    "year": 2024,
+    "venue": "",
+    "journal": null,
+    "authors": "Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin",
+    "url": "https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
+    "paperId": "88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2407.18760",
+    "publicationTypes": null,
+    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  booktitle = {},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n}"
+  },
+  {
+    "title": "Software Bill of Materials in Java",
+    "year": 2023,
+    "venue": "SCORED@CCS",
+    "journal": "Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses",
+    "authors": "Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "url": "https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce",
+    "paperId": "5bbeaef5be5f51910284aedab35351c651aeafce",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1145/3605770.3625207",
+    "arxivId": null,
+    "publicationTypes": [
+      "JournalArticle",
+      "Book"
+    ],
+    "bibtex": "@article{5bbeaef5be5f51910284aedab35351c651aeafce,\n  title = {Software Bill of Materials in Java},\n  author = {Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"name\":\"Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {SCORED@CCS},\n  doi = {10.1145/3605770.3625207},\n  url = {https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce},\n}"
+  },
+  {
+    "title": "Challenges of Producing Software Bill of Materials for Java",
+    "year": 2023,
+    "venue": "IEEE Security and Privacy",
+    "journal": "IEEE Security & Privacy",
+    "authors": "Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "url": "https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
+    "paperId": "363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/MSEC.2023.3302956",
+    "arxivId": "2303.11102",
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{363c457a4835dfbf0c2eb1ae95b0c7c6c4219722,\n  title = {Challenges of Producing Software Bill of Materials for Java},\n  author = {Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"volume\":\"21\",\"pages\":\"12-23\",\"name\":\"IEEE Security & Privacy\"}},\n  booktitle = {IEEE Security and Privacy},\n  doi = {10.1109/MSEC.2023.3302956},\n  eprint = {2303.11102},\n  url = {https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722},\n}"
+  },
+  {
+    "title": "Augmenting Diffs With Runtime Information",
+    "year": 2022,
+    "venue": "IEEE Transactions on Software Engineering",
+    "journal": "IEEE Transactions on Software Engineering",
+    "authors": "K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin",
+    "url": "https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8",
+    "paperId": "1f593c52814f94ca884c844c5186459906a4c3c8",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": "10.1109/TSE.2023.3324258",
+    "arxivId": "2212.11077",
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "bibtex": "@article{1f593c52814f94ca884c844c5186459906a4c3c8,\n  title = {Augmenting Diffs With Runtime Information},\n  author = {K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin},\n  year = {2022},\n  journal = {{\"volume\":\"49\",\"pages\":\"4988-5007\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2023.3324258},\n  eprint = {2212.11077},\n  url = {https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8},\n}"
+  },
+  {
+    "title": "UPPERCASE IS ALL YOU NEED",
+    "year": null,
+    "venue": "",
+    "journal": null,
+    "authors": "Vivi Andersson and Aman Sharma",
+    "url": "https://www.semanticscholar.org/paper/418a26e26e62d21cad8d188664c35cc970f627b7",
+    "paperId": "418a26e26e62d21cad8d188664c35cc970f627b7",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": null,
+    "publicationTypes": null,
+    "bibtex": "@article{418a26e26e62d21cad8d188664c35cc970f627b7,\n  title = {UPPERCASE IS ALL YOU NEED},\n  author = {Vivi Andersson and Aman Sharma},\n  year = {null},\n  booktitle = {},\n  url = {https://www.semanticscholar.org/paper/418a26e26e62d21cad8d188664c35cc970f627b7},\n}"
+  }
+]
