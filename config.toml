@@ -4,6 +4,7 @@ base_url = "https://algomaster99.github.io/"
 output_dir = "docs"
 
 # Navbar title
+# This is also used for highlighting the author in publication list
 title = "Aman Sharma"
 
 # Whether to automatically compile all Sass files in the sass directory
