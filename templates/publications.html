@@ -3,7 +3,6 @@
 {% block main_content %}
 
 <script src="{{ get_url(path='js/bibtex_render.js', trailing_slash=false) | safe }}"/></script>
-<script src="{{ get_url(path='js/highlight_self.js', trailing_slash=false) | safe }}"/></script>
 
 {{ page.content | safe }}
 
@@ -39,12 +38,23 @@
                         {% set author_count = author_list | length %}
                         {% for author in author_list %}
                             {% set trimmed_author = author | trim %}
-                            {% if loop.last and author_count > 1 %}
-                                and <span class="author">{{ trimmed_author }}</span>
-                            {% elif author_count > 1 %}
-                                <span class="author">{{ trimmed_author }}</span>,
+                            <!-- Highlight author if it is me -->
+                            {% if trimmed_author == config.title %}
+                                {% if loop.last and author_count > 1 %}
+                                    and <span class="author highlight">{{ trimmed_author }}</span>
+                                {% elif author_count > 1 %}
+                                    <span class="author highlight">{{ trimmed_author }}</span>,
+                                {% else %}
+                                    <span class="author highlight">{{ trimmed_author }}</span>
+                                {% endif %}
                             {% else %}
-                                <span class="author">{{ trimmed_author }}</span>
+                                {% if loop.last and author_count > 1 %}
+                                    and <span class="author">{{ trimmed_author }}</span>
+                                {% elif author_count > 1 %}
+                                    <span class="author">{{ trimmed_author }}</span>,
+                                {% else %}
+                                    <span class="author">{{ trimmed_author }}</span>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </span>,
