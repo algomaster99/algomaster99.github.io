@@ -2,8 +2,6 @@
 
 {% block main_content %}
 
-<script src="{{ get_url(path='js/bibtex_render.js', trailing_slash=false) | safe }}"/></script>
-
 {{ page.content | safe }}
 
 <div class="container max-w-3xl mx-auto px-4">
@@ -75,8 +73,9 @@
                         <a href="https://arxiv.org/abs/{{ paper.arxivId }}" target="_blank" class="clickable">[arxiv]</a>
                     {% endif %}
                     {% if paper.bibtex %}
-                        <span id="{{ paper.paperId }}" class="clickable bibtex-toggle">[bibtex]</span>
-                        <pre id="bibtex-entry-{{ paper.paperId }}" class="clickable hidden">{{ paper.bibtex }}</pre>
+                        <input type="checkbox" id="bibtex-checkbox-{{ paper.paperId }}" class="bibtex-checkbox">
+                        <label for="bibtex-checkbox-{{ paper.paperId }}" class="clickable bibtex-toggle">[bibtex]</label>
+                        <pre id="bibtex-entry-{{ paper.paperId }}" class="bibtex-entry">{{ paper.bibtex }}</pre>
                     {% endif %}
                 </span>
             </li>

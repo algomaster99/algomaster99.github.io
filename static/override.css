@@ -18,6 +18,22 @@
   display: none;
 }
 
+.bibtex-checkbox {
+  display: none;
+}
+
+.bibtex-entry {
+  display: none;
+  margin-top: 0.5rem;
+  background-color: var(--bg-1);
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+
+.bibtex-checkbox:checked ~ .bibtex-entry {
+  display: block;
+}
+
 .highlight {
   background-color: var(--primary-color);
 }
