@@ -74,11 +74,11 @@ jobs:
               (if .url then "  url = {" + (.url | tostring) + "},\n" else "" end) +
               "}"
             )
-          }] | sort_by(.year // 0) | reverse' > static/publications.json
-          if ! git diff --quiet -- static/publications.json; then
+          }] | sort_by(.year // 0) | reverse' > static/publications/index.json
+          if ! git diff --quiet -- static/publications/index.json; then
             git config --local user.name "github-actions[bot]"
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git add static/publications.json
+            git add static/publications/index.json
             git commit -m "Update publications from Semantic Scholar"
             git push origin "HEAD:${GH_BRANCH}"
           else

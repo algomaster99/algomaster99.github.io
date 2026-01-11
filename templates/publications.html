@@ -8,10 +8,19 @@
     <div class="font-sans py-8">
     </div>
 
-    {% set publications_data = load_data(path="static/publications.json", required=false) %}
+    {% set publications_data = load_data(path="static/publications/index.json", required=false) %}
+    {% set amend_data = load_data(path="static/publications/amend.json", required=false) %}
     {% if publications_data and publications_data | length > 0 %}
         {% set_global current_year = 0 %}
         {% for paper in publications_data %}
+            {% set_global has_award = false %}
+            {% if amend_data %}
+                {% for amend_entry in amend_data %}
+                    {% if amend_entry.paperId == paper.paperId and amend_entry.award == true %}
+                        {% set_global has_award = true %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
             {% set year = paper.year | default(value=0) %}
             {% if year != current_year %}
                 {% if not loop.first %}
@@ -25,6 +34,9 @@
             <li>
                 <span>
                     <strong>
+                        {% if has_award == true %}
+                            <span title="Award" style="margin-left: 0.3em;">🏆</span>
+                        {% endif %}
                         {% if paper.url %}
                             <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
                         {% else %}
