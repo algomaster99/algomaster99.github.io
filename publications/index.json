@@ -44,12 +44,12 @@
     "paperId": "0335eec7ae3e01976ff66485fac24a72291bbfe6",
     "citationCount": null,
     "referenceCount": null,
-    "doi": "10.1109/tse.2025.3627891",
+    "doi": "10.1109/TSE.2025.3627891",
     "arxivId": "2504.21679",
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and Benoit Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/tse.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n}"
+    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and Benoit Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"52\",\"pages\":\"54-69\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n}"
   },
   {
     "title": "SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java",
