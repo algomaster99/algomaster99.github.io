@@ -1,5 +1,17 @@
 [
   {
+    "title": "DDC4j: Diverse Double-Compiling for Java",
+    "URL": "https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-376181",
+    "year": 2025,
+    "author": "Eskil Nyberg, Elias Lundell"
+  },
+  {
+    "title": "Automatically Analyzing Reproducibility Issues in Java Maven",
+    "URL": "https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-376049",
+    "year": 2025,
+    "author": "Christian Stjernberg"
+  },
+  {
     "title": "Code Coverage for Java Dependencies",
     "URL": "https://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-373597",
     "year": 2025,
