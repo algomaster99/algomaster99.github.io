@@ -14,10 +14,18 @@
         {% set_global current_year = 0 %}
         {% for paper in publications_data %}
             {% set_global has_award = false %}
+            {% set_global award_tooltip = "" %}
+            {% set_global award_url = "" %}
             {% if amend_data %}
                 {% for amend_entry in amend_data %}
-                    {% if amend_entry.paperId == paper.paperId and amend_entry.award == true %}
+                    {% if amend_entry.paperId == paper.paperId and amend_entry.award %}
                         {% set_global has_award = true %}
+                        {% if amend_entry.award is object %}
+                            {% set_global award_tooltip = amend_entry.award.tooltip | default(value="Award") %}
+                            {% set_global award_url = amend_entry.award.url | default(value="") %}
+                        {% else %}
+                            {% set_global award_tooltip = "Award" %}
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
             {% endif %}
@@ -35,7 +43,11 @@
                 <span>
                     <strong>
                         {% if has_award == true %}
-                            <span title="Award" style="margin-left: 0.3em;">🏆</span>
+                            {% if award_url %}
+                                <a href="{{ award_url }}" target="_blank" title="{{ award_tooltip }}" style="margin-left: 0.3em;">🏆</a>
+                            {% else %}
+                                <span title="{{ award_tooltip }}" style="margin-left: 0.3em;">🏆</span>
+                            {% endif %}
                         {% endif %}
                         {% if paper.url %}
                             <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
