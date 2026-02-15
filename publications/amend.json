@@ -1,6 +1,9 @@
 [
   {
     "paperId": "88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
-    "award": true
+    "award": {
+      "tooltip": "SCORED 2025 Distinguished Paper Award",
+      "url": "/scored-award.pdf"
+    }
   }
 ]
