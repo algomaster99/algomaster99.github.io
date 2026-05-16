@@ -1,5 +1,20 @@
 [
   {
+    "title": "zkSBOM: Privacy-Preserving SBOM Sharing with Zero-Knowledge Sets",
+    "year": 2026,
+    "venue": "",
+    "journal": null,
+    "authors": "Tom Sorger and Eric Cornelissen and Aman Sharma and Javier Ron and Musard Balliu and Martin Monperrus",
+    "url": "https://www.semanticscholar.org/paper/0a3e59c81dde27756589e7beb24d7c8faede15b2",
+    "paperId": "0a3e59c81dde27756589e7beb24d7c8faede15b2",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2605.00076",
+    "publicationTypes": null,
+    "bibtex": "@article{0a3e59c81dde27756589e7beb24d7c8faede15b2,\n  title = {zkSBOM: Privacy-Preserving SBOM Sharing with Zero-Knowledge Sets},\n  author = {Tom Sorger and Eric Cornelissen and Aman Sharma and Javier Ron and Musard Balliu and Martin Monperrus},\n  year = {2026},\n  booktitle = {},\n  eprint = {2605.00076},\n  url = {https://www.semanticscholar.org/paper/0a3e59c81dde27756589e7beb24d7c8faede15b2},\n}"
+  },
+  {
     "title": "Classport: Designing Runtime Dependency Introspection for Java",
     "year": 2025,
     "venue": "arXiv.org",
