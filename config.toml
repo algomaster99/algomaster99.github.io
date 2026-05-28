@@ -41,6 +41,7 @@ menu = [
     { name = "Posters", url = "/posters", weight = 2 },
     { name = "Services", url = "/phd-activities", weight = 3 },
     { name = "Talks", url = "/talks", weight = 4 },
+    { name = "Projects", url = "/projects", weight = 5 },
 ]
 
 stylesheets = [
