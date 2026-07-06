@@ -17,7 +17,7 @@ template = "phd-activities.html"
 - ### [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482?l=en)
     - Autumn 2024
 
-- ### [DD2385: Computer Security](https://www.kth.se/student/kurser/kurs/DD2395)
+- ### [DD2395: Computer Security](https://www.kth.se/student/kurser/kurs/DD2395)
     - Autumn 2024
     - Autumn 2023
 
