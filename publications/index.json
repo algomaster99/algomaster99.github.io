@@ -1,5 +1,20 @@
 [
   {
+    "title": "Dependencies that Bundle Code and Execution",
+    "year": 2026,
+    "venue": "",
+    "journal": null,
+    "authors": "Aman Sharma and Monperrus Martin",
+    "url": "https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f",
+    "paperId": "53600b44c43415f2185ebf25fdf5d296f4d6861f",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2607.02618",
+    "publicationTypes": null,
+    "bibtex": "@article{53600b44c43415f2185ebf25fdf5d296f4d6861f,\n  title = {Dependencies that Bundle Code and Execution},\n  author = {Aman Sharma and Monperrus Martin},\n  year = {2026},\n  booktitle = {},\n  eprint = {2607.02618},\n  url = {https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f},\n}"
+  },
+  {
     "title": "zkSBOM: Privacy-Preserving SBOM Sharing with Zero-Knowledge Sets",
     "year": 2026,
     "venue": "",
