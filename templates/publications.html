@@ -18,7 +18,7 @@
             {% set_global award_url = "" %}
             {% if amend_data %}
                 {% for amend_entry in amend_data %}
-                    {% if amend_entry.paperId == paper.paperId and amend_entry.award %}
+                    {% if amend_entry.award and ((amend_entry.arxivId and amend_entry.arxivId == paper.arxivId) or (amend_entry.paperId and amend_entry.paperId == paper.paperId)) %}
                         {% set_global has_award = true %}
                         {% if amend_entry.award is object %}
                             {% set_global award_tooltip = amend_entry.award.tooltip | default(value="Award") %}
