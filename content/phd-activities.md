@@ -11,6 +11,7 @@ template = "phd-activities.html"
 - Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
 - Co-reviewed manuscript for [USENIX Security](https://www.usenix.org/conference/usenixsecurity25)
 - Co-reviewed manuscript for [ICSE'2025 Demos track](https://conf.researchr.org/track/icse-2025/icse-2025-demonstrations)
+- Reviewed manuscript for [ACM Computing Surveys](https://dl.acm.org/journal/csur)
 
 ## Teaching Assistant
 
