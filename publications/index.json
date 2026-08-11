@@ -1,5 +1,20 @@
 [
   {
+    "title": "Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation",
+    "year": 2026,
+    "venue": "",
+    "journal": null,
+    "authors": "Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann",
+    "url": "https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
+    "paperId": "bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2607.24888",
+    "publicationTypes": null,
+    "bibtex": "@article{bfbb7876ba1ee446b3259ff37889a9c8f83d3574,\n  title = {Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation},\n  author = {Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann},\n  year = {2026},\n  booktitle = {},\n  eprint = {2607.24888},\n  url = {https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574},\n}"
+  },
+  {
     "title": "Dependencies that Bundle Code and Execution",
     "year": 2026,
     "venue": "",
@@ -103,17 +118,20 @@
   {
     "title": "Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order",
     "year": 2024,
-    "venue": "",
-    "journal": null,
+    "venue": "Student Conference on Research and Development",
+    "journal": "Proceedings of the 2025 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses",
     "authors": "Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin",
     "url": "https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
     "paperId": "88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
     "citationCount": null,
     "referenceCount": null,
-    "doi": null,
+    "doi": "10.1145/3733827.3765523",
     "arxivId": "2407.18760",
-    "publicationTypes": null,
-    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  booktitle = {},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n}"
+    "publicationTypes": [
+      "Book",
+      "JournalArticle"
+    ],
+    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Federico Bono and Frank Reyes and Aman Sharma and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"name\":\"Proceedings of the 2025 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {Student Conference on Research and Development},\n  doi = {10.1145/3733827.3765523},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n}"
   },
   {
     "title": "Software Bill of Materials in Java",

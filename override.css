@@ -44,6 +44,13 @@
   }
 }
 
+.talk-date {
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
 .poster-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
