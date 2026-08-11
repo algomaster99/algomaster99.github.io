@@ -4,8 +4,25 @@
 {% endfor -%}
 {% endmacro -%}
 
+{% macro ordinal_date(date) -%}
+{%- set day = date | date(format="%-d") | int -%}
+{%- if day % 100 >= 11 and day % 100 <= 13 -%}
+    {%- set suffix = "th" -%}
+{%- elif day % 10 == 1 -%}
+    {%- set suffix = "st" -%}
+{%- elif day % 10 == 2 -%}
+    {%- set suffix = "nd" -%}
+{%- elif day % 10 == 3 -%}
+    {%- set suffix = "rd" -%}
+{%- else -%}
+    {%- set suffix = "th" -%}
+{%- endif -%}
+{{ day }}{{ suffix }} {{ date | date(format="%B %Y") }}
+{%- endmacro %}
+
 {% macro talk(page) -%}
 <li>
+    <div class="talk-date">{{ self::ordinal_date(date=page.date) }}</div>
     <span>{{ page.title }},</span>
     <a href="{{ page.extra.conference_url }}">{{ page.extra.conference }}</a>
     {% if page.extra.video %}
