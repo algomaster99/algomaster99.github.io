@@ -7,7 +7,8 @@ template = "phd-activities.html"
 
 ## Academic Services
 
-- Co-reviewed manuscript for [ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)](https://scored.dev/)
+- Program Committee Member for [Conference on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED '26)](https://scored.dev/2026/)
+- Co-reviewed manuscript for [ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)](https://scored.dev/2024/)
 - Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
 - Co-reviewed manuscript for [USENIX Security](https://www.usenix.org/conference/usenixsecurity25)
 - Co-reviewed manuscript for [ICSE'2025 Demos track](https://conf.researchr.org/track/icse-2025/icse-2025-demonstrations)
@@ -16,6 +17,7 @@ template = "phd-activities.html"
 ## Teaching Assistant
 
 - ### [DD2482 Automated Software Testing and DevOps](https://www.kth.se/student/kurser/kurs/DD2482?l=en)
+    - Autumn 2026
     - Autumn 2024
 
 - ### [DD2395: Computer Security](https://www.kth.se/student/kurser/kurs/DD2395)
