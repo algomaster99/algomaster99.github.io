@@ -2,32 +2,36 @@
   {
     "title": "Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation",
     "year": 2026,
-    "venue": "",
-    "journal": null,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
     "authors": "Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann",
     "url": "https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
     "paperId": "bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
     "citationCount": null,
     "referenceCount": null,
-    "doi": null,
+    "doi": "10.1145/3848003.3848012",
     "arxivId": "2607.24888",
-    "publicationTypes": null,
-    "bibtex": "@article{bfbb7876ba1ee446b3259ff37889a9c8f83d3574,\n  title = {Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation},\n  author = {Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann},\n  year = {2026},\n  booktitle = {},\n  eprint = {2607.24888},\n  url = {https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574},\n}"
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{bfbb7876ba1ee446b3259ff37889a9c8f83d3574,\n  title = {Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation},\n  author = {Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann},\n  year = {2026},\n  journal = {{\"volume\":\"abs/2607.24888\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.1145/3848003.3848012},\n  eprint = {2607.24888},\n  url = {https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574},\n}"
   },
   {
     "title": "Dependencies that Bundle Code and Execution",
     "year": 2026,
-    "venue": "",
-    "journal": null,
+    "venue": "arXiv.org",
+    "journal": "ArXiv",
     "authors": "Aman Sharma and Monperrus Martin",
     "url": "https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f",
     "paperId": "53600b44c43415f2185ebf25fdf5d296f4d6861f",
     "citationCount": null,
     "referenceCount": null,
-    "doi": null,
+    "doi": "10.48550/arXiv.2607.02618",
     "arxivId": "2607.02618",
-    "publicationTypes": null,
-    "bibtex": "@article{53600b44c43415f2185ebf25fdf5d296f4d6861f,\n  title = {Dependencies that Bundle Code and Execution},\n  author = {Aman Sharma and Monperrus Martin},\n  year = {2026},\n  booktitle = {},\n  eprint = {2607.02618},\n  url = {https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f},\n}"
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "bibtex": "@article{53600b44c43415f2185ebf25fdf5d296f4d6861f,\n  title = {Dependencies that Bundle Code and Execution},\n  author = {Aman Sharma and Monperrus Martin},\n  year = {2026},\n  journal = {{\"volume\":\"abs/2607.02618\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2607.02618},\n  eprint = {2607.02618},\n  url = {https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f},\n}"
   },
   {
     "title": "zkSBOM: Privacy-Preserving SBOM Sharing with Zero-Knowledge Sets",
@@ -156,7 +160,7 @@
     "year": 2023,
     "venue": "IEEE Security and Privacy",
     "journal": "IEEE Security & Privacy",
-    "authors": "Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "authors": "Musard Balliu and B. Baudry and Sofia Bobadilla and Mathias Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
     "url": "https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
     "paperId": "363c457a4835dfbf0c2eb1ae95b0c7c6c4219722",
     "citationCount": null,
@@ -166,7 +170,7 @@
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{363c457a4835dfbf0c2eb1ae95b0c7c6c4219722,\n  title = {Challenges of Producing Software Bill of Materials for Java},\n  author = {Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"volume\":\"21\",\"pages\":\"12-23\",\"name\":\"IEEE Security & Privacy\"}},\n  booktitle = {IEEE Security and Privacy},\n  doi = {10.1109/MSEC.2023.3302956},\n  eprint = {2303.11102},\n  url = {https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722},\n}"
+    "bibtex": "@article{363c457a4835dfbf0c2eb1ae95b0c7c6c4219722,\n  title = {Challenges of Producing Software Bill of Materials for Java},\n  author = {Musard Balliu and B. Baudry and Sofia Bobadilla and Mathias Ekstedt and Monperrus Martin and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"volume\":\"21\",\"pages\":\"12-23\",\"name\":\"IEEE Security & Privacy\"}},\n  booktitle = {IEEE Security and Privacy},\n  doi = {10.1109/MSEC.2023.3302956},\n  eprint = {2303.11102},\n  url = {https://www.semanticscholar.org/paper/363c457a4835dfbf0c2eb1ae95b0c7c6c4219722},\n}"
   },
   {
     "title": "Augmenting Diffs With Runtime Information",
