@@ -53,7 +53,7 @@
   {
     "title": "Classport: Designing Runtime Dependency Introspection for Java",
     "year": 2025,
-    "venue": "arXiv.org",
+    "venue": "Journal of Systems and Software",
     "journal": "ArXiv",
     "authors": "Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus",
     "url": "https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2",
@@ -65,7 +65,7 @@
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{d3c731c6fd32a2162a7431973a65e1fbcf0b6be2,\n  title = {Classport: Designing Runtime Dependency Introspection for Java},\n  author = {Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"abs/2510.20340\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2510.20340},\n  eprint = {2510.20340},\n  url = {https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2},\n}"
+    "bibtex": "@article{d3c731c6fd32a2162a7431973a65e1fbcf0b6be2,\n  title = {Classport: Designing Runtime Dependency Introspection for Java},\n  author = {Serena Cofano and Daniel Williams and Aman Sharma and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"abs/2510.20340\",\"name\":\"ArXiv\"}},\n  booktitle = {Journal of Systems and Software},\n  doi = {10.48550/arXiv.2510.20340},\n  eprint = {2510.20340},\n  url = {https://www.semanticscholar.org/paper/d3c731c6fd32a2162a7431973a65e1fbcf0b6be2},\n}"
   },
   {
     "title": "Build and Runtime Integrity for Java",
