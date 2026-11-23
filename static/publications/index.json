@@ -4,7 +4,7 @@
     "year": 2026,
     "venue": "arXiv.org",
     "journal": "ArXiv",
-    "authors": "Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann",
+    "authors": "Julien Malka and Aman Sharma and Martin Monperrus and S. Zacchiroli and Théo Zimmermann",
     "url": "https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
     "paperId": "bfbb7876ba1ee446b3259ff37889a9c8f83d3574",
     "citationCount": null,
@@ -14,7 +14,7 @@
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{bfbb7876ba1ee446b3259ff37889a9c8f83d3574,\n  title = {Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation},\n  author = {Julien Malka and Aman Sharma and Martin Monperrus and Stefano Zacchiroli and Théo Zimmermann},\n  year = {2026},\n  journal = {{\"volume\":\"abs/2607.24888\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.1145/3848003.3848012},\n  eprint = {2607.24888},\n  url = {https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574},\n}"
+    "bibtex": "@article{bfbb7876ba1ee446b3259ff37889a9c8f83d3574,\n  title = {Trusting-Trust Attack against an Entire Linux Distribution through Binary Manipulation},\n  author = {Julien Malka and Aman Sharma and Martin Monperrus and S. Zacchiroli and Théo Zimmermann},\n  year = {2026},\n  journal = {{\"volume\":\"abs/2607.24888\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.1145/3848003.3848012},\n  eprint = {2607.24888},\n  url = {https://www.semanticscholar.org/paper/bfbb7876ba1ee446b3259ff37889a9c8f83d3574},\n}"
   },
   {
     "title": "Dependencies that Bundle Code and Execution",
@@ -32,6 +32,21 @@
       "JournalArticle"
     ],
     "bibtex": "@article{53600b44c43415f2185ebf25fdf5d296f4d6861f,\n  title = {Dependencies that Bundle Code and Execution},\n  author = {Aman Sharma and Monperrus Martin},\n  year = {2026},\n  journal = {{\"volume\":\"abs/2607.02618\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2607.02618},\n  eprint = {2607.02618},\n  url = {https://www.semanticscholar.org/paper/53600b44c43415f2185ebf25fdf5d296f4d6861f},\n}"
+  },
+  {
+    "title": "YUL: Bringing Software Supply Chain Security to Coding Agents",
+    "year": 2026,
+    "venue": "",
+    "journal": null,
+    "authors": "Aman Sharma and Frank Reyes and Martin Monperrus",
+    "url": "https://www.semanticscholar.org/paper/177068f91b03cc51b1d95c433661dd3610e557e8",
+    "paperId": "177068f91b03cc51b1d95c433661dd3610e557e8",
+    "citationCount": null,
+    "referenceCount": null,
+    "doi": null,
+    "arxivId": "2611.23314",
+    "publicationTypes": null,
+    "bibtex": "@article{177068f91b03cc51b1d95c433661dd3610e557e8,\n  title = {YUL: Bringing Software Supply Chain Security to Coding Agents},\n  author = {Aman Sharma and Frank Reyes and Martin Monperrus},\n  year = {2026},\n  booktitle = {},\n  eprint = {2611.23314},\n  url = {https://www.semanticscholar.org/paper/177068f91b03cc51b1d95c433661dd3610e557e8},\n}"
   },
   {
     "title": "zkSBOM: Privacy-Preserving SBOM Sharing with Zero-Knowledge Sets",
@@ -90,7 +105,7 @@
     "year": 2025,
     "venue": "IEEE Transactions on Software Engineering",
     "journal": "IEEE Transactions on Software Engineering",
-    "authors": "Aman Sharma and Benoit Baudry and Martin Monperrus",
+    "authors": "Aman Sharma and B. Baudry and Martin Monperrus",
     "url": "https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6",
     "paperId": "0335eec7ae3e01976ff66485fac24a72291bbfe6",
     "citationCount": null,
@@ -100,14 +115,14 @@
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and Benoit Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"52\",\"pages\":\"54-69\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n}"
+    "bibtex": "@article{0335eec7ae3e01976ff66485fac24a72291bbfe6,\n  title = {Causes and Canonicalization of Unreproducible Builds in Java},\n  author = {Aman Sharma and B. Baudry and Martin Monperrus},\n  year = {2025},\n  journal = {{\"volume\":\"52\",\"pages\":\"54-69\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2025.3627891},\n  eprint = {2504.21679},\n  url = {https://www.semanticscholar.org/paper/0335eec7ae3e01976ff66485fac24a72291bbfe6},\n}"
   },
   {
     "title": "SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java",
     "year": 2024,
     "venue": "arXiv.org",
     "journal": "ArXiv",
-    "authors": "Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin",
+    "authors": "Aman Sharma and Martin Wittlinger and B. Baudry and Monperrus Martin",
     "url": "https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8",
     "paperId": "fee03410d3382e45099694dd4526be3184c0edd8",
     "citationCount": null,
@@ -117,14 +132,14 @@
     "publicationTypes": [
       "JournalArticle"
     ],
-    "bibtex": "@article{fee03410d3382e45099694dd4526be3184c0edd8,\n  title = {SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java},\n  author = {Aman Sharma and Martin Wittlinger and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"volume\":\"abs/2407.00246\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2407.00246},\n  eprint = {2407.00246},\n  url = {https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8},\n}"
+    "bibtex": "@article{fee03410d3382e45099694dd4526be3184c0edd8,\n  title = {SBOM.EXE: Countering Dynamic Code Injection based on Software Bill of Materials in Java},\n  author = {Aman Sharma and Martin Wittlinger and B. Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"volume\":\"abs/2407.00246\",\"name\":\"ArXiv\"}},\n  booktitle = {arXiv.org},\n  doi = {10.48550/arXiv.2407.00246},\n  eprint = {2407.00246},\n  url = {https://www.semanticscholar.org/paper/fee03410d3382e45099694dd4526be3184c0edd8},\n}"
   },
   {
     "title": "Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order",
     "year": 2024,
     "venue": "Student Conference on Research and Development",
     "journal": "Proceedings of the 2025 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses",
-    "authors": "Frank Reyes and Federico Bono and Aman Sharma and Benoit Baudry and Monperrus Martin",
+    "authors": "Frank Reyes and Federico Bono and Aman Sharma and B. Baudry and Monperrus Martin",
     "url": "https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
     "paperId": "88855db31c2d0ab76b6fed8ec6e234e2fe301faf",
     "citationCount": null,
@@ -135,14 +150,14 @@
       "Book",
       "JournalArticle"
     ],
-    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Frank Reyes and Federico Bono and Aman Sharma and Benoit Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"name\":\"Proceedings of the 2025 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {Student Conference on Research and Development},\n  doi = {10.1145/3733827.3765523},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n}"
+    "bibtex": "@article{88855db31c2d0ab76b6fed8ec6e234e2fe301faf,\n  title = {Maven-Hijack: Software Supply Chain Attack Exploiting Packaging Order},\n  author = {Frank Reyes and Federico Bono and Aman Sharma and B. Baudry and Monperrus Martin},\n  year = {2024},\n  journal = {{\"name\":\"Proceedings of the 2025 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {Student Conference on Research and Development},\n  doi = {10.1145/3733827.3765523},\n  eprint = {2407.18760},\n  url = {https://www.semanticscholar.org/paper/88855db31c2d0ab76b6fed8ec6e234e2fe301faf},\n}"
   },
   {
     "title": "Software Bill of Materials in Java",
     "year": 2023,
     "venue": "SCORED@CCS",
     "journal": "Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses",
-    "authors": "Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
+    "authors": "Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger",
     "url": "https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce",
     "paperId": "5bbeaef5be5f51910284aedab35351c651aeafce",
     "citationCount": null,
@@ -153,7 +168,7 @@
       "JournalArticle",
       "Book"
     ],
-    "bibtex": "@article{5bbeaef5be5f51910284aedab35351c651aeafce,\n  title = {Software Bill of Materials in Java},\n  author = {Musard Balliu and Benoit Baudry and Sofia Bobadilla and Mathias Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"name\":\"Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {SCORED@CCS},\n  doi = {10.1145/3605770.3625207},\n  url = {https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce},\n}"
+    "bibtex": "@article{5bbeaef5be5f51910284aedab35351c651aeafce,\n  title = {Software Bill of Materials in Java},\n  author = {Musard Balliu and B. Baudry and Sofia Bobadilla and M. Ekstedt and Martin Monperrus and Javier Ron and Aman Sharma and Gabriel Skoglund and César Soto-Valero and Martin Wittlinger},\n  year = {2023},\n  journal = {{\"name\":\"Proceedings of the 2023 Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses\"}},\n  booktitle = {SCORED@CCS},\n  doi = {10.1145/3605770.3625207},\n  url = {https://www.semanticscholar.org/paper/5bbeaef5be5f51910284aedab35351c651aeafce},\n}"
   },
   {
     "title": "Challenges of Producing Software Bill of Materials for Java",
@@ -177,7 +192,7 @@
     "year": 2022,
     "venue": "IEEE Transactions on Software Engineering",
     "journal": "IEEE Transactions on Software Engineering",
-    "authors": "K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin",
+    "authors": "Khashayar Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin",
     "url": "https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8",
     "paperId": "1f593c52814f94ca884c844c5186459906a4c3c8",
     "citationCount": null,
@@ -188,7 +203,7 @@
       "JournalArticle",
       "Review"
     ],
-    "bibtex": "@article{1f593c52814f94ca884c844c5186459906a4c3c8,\n  title = {Augmenting Diffs With Runtime Information},\n  author = {K. Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin},\n  year = {2022},\n  journal = {{\"volume\":\"49\",\"pages\":\"4988-5007\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2023.3324258},\n  eprint = {2212.11077},\n  url = {https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8},\n}"
+    "bibtex": "@article{1f593c52814f94ca884c844c5186459906a4c3c8,\n  title = {Augmenting Diffs With Runtime Information},\n  author = {Khashayar Etemadi and Aman Sharma and Fernanda Madeiral and Monperrus Martin},\n  year = {2022},\n  journal = {{\"volume\":\"49\",\"pages\":\"4988-5007\",\"name\":\"IEEE Transactions on Software Engineering\"}},\n  booktitle = {IEEE Transactions on Software Engineering},\n  doi = {10.1109/TSE.2023.3324258},\n  eprint = {2212.11077},\n  url = {https://www.semanticscholar.org/paper/1f593c52814f94ca884c844c5186459906a4c3c8},\n}"
   },
   {
     "title": "UPPERCASE IS ALL YOU NEED",
