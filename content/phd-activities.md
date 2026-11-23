@@ -7,8 +7,10 @@ template = "phd-activities.html"
 
 ## Academic Services
 
+- Program Committee Member for [Workshop on Software Supply Chain Security (ChainSEC '27) at ICSE 2027](https://chain-sec.github.io/)
+- Co-reviewed manuscript for [ICSE'2027 Tool Demonstrations track](https://conf.researchr.org/track/icse-2027/icse-2027-demonstrations)
 - Program Committee Member for [Conference on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED '26)](https://scored.dev/2026/)
-- Co-reviewed manuscript for [ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED)](https://scored.dev/2024/)
+- Co-reviewed manuscript for [ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses (SCORED '24)](https://scored.dev/2024/)
 - Co-reviewed manuscript for [IEEE Software](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=52)
 - Co-reviewed manuscript for [USENIX Security](https://www.usenix.org/conference/usenixsecurity25)
 - Co-reviewed manuscript for [ICSE'2025 Demos track](https://conf.researchr.org/track/icse-2025/icse-2025-demonstrations)
