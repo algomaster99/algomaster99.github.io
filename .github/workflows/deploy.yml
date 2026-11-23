@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+# Runs push data-update commits to main, so never let two of them race.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: publish
@@ -14,6 +19,9 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
         with:
+          # Check out the branch tip rather than the triggering SHA, so re-runs
+          # don't push data-update commits on top of a stale base (non-fast-forward).
+          ref: ${{ github.ref }}
           fetch-depth: 0
           submodules: true
 
@@ -30,9 +38,21 @@ jobs:
         env:
           GH_BRANCH: ${{ github.ref_name }}
         run: |
-          # This URL is from "Create feeds" feature in DiVA Portal
-          curl -L 'https://kth.diva-portal.org/smash/export.jsf?format=csl_json&addFilename=true&aq=[[{%22freeText%22:%22Aman%20Sharma%22}]]&aqe=[]&aq2=[[{%22publicationTypeCode%22:[%22studentThesis%22]}]]&onlyFullText=false&noOfRows=50&sortOrder=dayCreated_desc&sortOrder2=dayCreated_desc' --globoff | \
-          jq 'map({title, URL, year: .issued."date-parts".[].[0], author: [.author.[] | .given + " " + .family] | join(", ") })' > static/master-thesis.json
+          set -euo pipefail
+          response="$(mktemp)"
+          # This URL is from "Create feeds" feature in DiVA Portal.
+          # --fail makes HTTP errors non-zero instead of piping an error page into jq.
+          if ! curl -fsSL --retry 3 --retry-delay 10 --globoff -o "$response" \
+            'https://kth.diva-portal.org/smash/export.jsf?format=csl_json&addFilename=true&aq=[[{%22freeText%22:%22Aman%20Sharma%22}]]&aqe=[]&aq2=[[{%22publicationTypeCode%22:[%22studentThesis%22]}]]&onlyFullText=false&noOfRows=50&sortOrder=dayCreated_desc&sortOrder2=dayCreated_desc'; then
+            echo "::warning::DiVA request failed; keeping existing master thesis data."
+            exit 0
+          fi
+          # An empty or non-JSON response previously wiped static/master-thesis.json and broke `zola build`.
+          if ! jq -e 'type == "array" and length > 0' "$response" > /dev/null 2>&1; then
+            echo "::warning::DiVA response was not a non-empty JSON array; keeping existing master thesis data."
+            exit 0
+          fi
+          jq 'map({title, URL, year: .issued."date-parts".[].[0], author: [.author.[] | .given + " " + .family] | join(", ") })' "$response" > static/master-thesis.json
           if ! git diff --quiet -- static/master-thesis.json; then
             git config --local user.name "github-actions[bot]"
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
